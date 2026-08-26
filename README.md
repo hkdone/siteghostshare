@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Politique de confidentialité — GhostShare</title>
+  <meta name="description" content="Politique de confidentialité de GhostShare : partage P2P éphémère, sans cloud de contenu."/>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --ink: #1a1c1e;
+      --muted: #5c6570;
+      --card: #ffffff;
+      --line: #d8dde3;
+      --accent: #0f6b5c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(900px 420px at 10% -10%, #e7efe9, transparent),
+        var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 28px 0 10px;
+    }
+    p, li { font-size: 0.98rem; }
+    ul { padding-left: 1.2rem; }
+    li { margin: 0.35rem 0; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 16px 0;
+    }
+    .card strong { color: var(--accent); }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 36px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Politique de confidentialité — GhostShare</h1>
+      <p class="meta">Éditeur : Jean Virassa · Contact : <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a><br/>
+      Dernière mise à jour : 26 août 2026</p>
+    </header>
+
+    <div class="card">
+      <strong>En bref.</strong>
+      GhostShare est une application de partage <em>éphémère</em> en pair-à-pair (P2P)
+      et/ou en local (Wi‑Fi, SoftAP, VPN). Les fichiers, secrets, messages, flux audio/vidéo
+      et autres contenus échangés <strong>ne sont pas stockés dans un cloud GhostShare</strong>
+      et <strong>ne sont pas accessibles à l’éditeur</strong> dans le cadre normal du service.
+      Seules des métadonnées techniques de connexion / signalisation peuvent transiter
+      de façon éphémère. Vous restez responsable du contenu que vous envoyez ou recevez.
+    </div>
+
+    <h2>1. Qui sommes-nous ?</h2>
+    <p>
+      GhostShare (« l’Application ») est éditée par Jean Virassa (« l’Éditeur »).
+      L’Application permet de partager temporairement des contenus numériques entre appareils
+      (fichier, texte secret, chat, visio, conférence, contact, position, etc.),
+      soit sur un réseau local, soit via une connexion Internet P2P initiée par un hôte Pro.
+    </p>
+
+    <h2>2. Principe technologique (P2P / local)</h2>
+    <p>Selon le mode choisi :</p>
+    <ul>
+      <li><strong>LAN / SoftAP / VPN</strong> : un mini-serveur éphémère tourne sur l’appareil hôte ; le contenu est servi depuis cet appareil (souvent en mémoire vive pour les secrets / chats).</li>
+      <li><strong>Internet P2P</strong> : le contenu et le média transitent en WebRTC direct entre appareils. Un service de signalisation tiers (ex. Worker Cloudflare) peut échanger uniquement des données techniques de rendez-vous (offre/réponse/candidats ICE), <strong>pas vos fichiers ni vos flux média</strong>.</li>
+    </ul>
+    <p>
+      En conséquence, l’Éditeur <strong>n’a pas accès</strong>, dans le fonctionnement normal,
+      au contenu des échanges, <strong>n’en devient pas propriétaire</strong> et
+      <strong>ne les héberge pas</strong> sur une infrastructure de stockage GhostShare.
+    </p>
+
+    <h2>3. Quelles données sont traitées ?</h2>
+    <h3>3.1 Contenu que vous partagez (hors portée de l’Éditeur)</h3>
+    <p>
+      GhostShare n’opère pas de stockage cloud pour vos fichiers, secrets, messages, audio ou vidéo.
+      Ces contenus restent entre appareils (mémoire ou session) et sont purgés à la fin de celle-ci.
+      L’éditeur n’en est ni propriétaire ni dépositaire. Seules des métadonnées techniques de
+      connexion et de signalisation (telles que les adresses IP et les horodatages de transit)
+      peuvent transiter de manière éphémère par l’infrastructure de routage, sans faire l’objet
+      d’une exploitation commerciale ou d’un stockage persistant à des fins de profilage.
+    </p>
+
+    <h3>3.2 Données techniques locales sur votre appareil</h3>
+    <p>L’Application peut stocker <strong>uniquement sur votre appareil</strong> :</p>
+    <ul>
+      <li>préférences (ex. écrans d’aide déjà vus) ;</li>
+      <li>compteurs freemium (ex. partages fichier / vCard par jour) ;</li>
+      <li>état d’abonnement / d’achat Pro fourni par le magasin d’applications.</li>
+    </ul>
+
+    <h3>3.3 Achats in-app</h3>
+    <p>
+      Les paiements sont traités par Google Play (ou autre magasin). L’Éditeur peut recevoir un
+      statut d’abonnement (produit, validité), mais <strong>pas vos données bancaires</strong>.
+    </p>
+
+    <h3>3.4 Signalisation Internet et infrastructure</h3>
+    <p>
+      En mode Internet P2P, la signalisation technique (ICE) transite par une infrastructure
+      de rendez-vous ou un worker de mise en relation. Ces services techniques traitent uniquement
+      les données de routage nécessaires à l’établissement de la connexion pair-à-pair,
+      à l’exclusion stricte de tout fichier ou flux média.
+    </p>
+
+    <h2>4. Permissions de l’appareil</h2>
+    <p>Selon les fonctions que vous activez, l’Application peut demander :</p>
+    <ul>
+      <li>caméra (scan QR, visio) ;</li>
+      <li>micro (conférence / visio) ;</li>
+      <li>capture d’écran / projection média (assistance écran Android) ;</li>
+      <li>accès réseau / Wi‑Fi voisin / localisation approximative (SoftAP, point de RDV si vous le saisissez) ;</li>
+      <li>stockage / fichiers (choix d’un document à envoyer).</li>
+    </ul>
+    <p>Ces permissions servent au partage demandé par l’utilisateur, pas à de la publicité ciblée.</p>
+
+    <h2>5. Destinataires et partage volontaire</h2>
+    <p>
+      Toute personne qui dispose du lien / QR / accès réseau et, le cas échéant, du PIN,
+      peut accéder au contenu de la session pendant sa durée de vie.
+      <strong>Vous êtes seul responsable</strong> des personnes avec qui vous partagez
+      et des informations que vous divulguez.
+    </p>
+
+    <h2>6. Responsabilité du contenu — protection de l’Éditeur</h2>
+    <p>
+      GhostShare est un outil technique de transmission éphémère. L’Éditeur
+      <strong>n’exerce pas de contrôle éditorial</strong> sur les contenus échangés via P2P / local.
+    </p>
+    <ul>
+      <li>Vous êtes <strong>entièrement responsable</strong> des contenus que vous envoyez, demandez, affichez ou stockez temporairement sur votre appareil.</li>
+      <li>Vous vous engagez à respecter les lois applicables (notamment propriété intellectuelle, vie privée des tiers, contenus illicites).</li>
+      <li>L’Éditeur ne garantit <strong>ni la légalité, ni l’exactitude, ni l’innocuité</strong> des contenus échangés entre utilisateurs.</li>
+      <li>L’Éditeur n’est <strong>ni propriétaire, ni dépositaire, ni hébergeur de stockage</strong> de ces contenus dans le sens d’un service cloud de fichiers.</li>
+      <li>Dans la mesure permise par le droit applicable, l’Éditeur ne saurait être tenu responsable des préjudices résultant du contenu échangé, d’un usage abusif, d’une mauvaise configuration réseau, d’un échec de connexion P2P, ou de la conservation locale par un destinataire.</li>
+    </ul>
+    <p>
+      <strong>Limite importante (transparence) :</strong>
+      aucune clause ne peut écarter toute responsabilité dans tous les cas prévus par la loi
+      (par exemple obligations légales spécifiques, faute personnelle caractérisée, ou régimes
+      impératifs de protection des consommateurs). Cette politique vise à refléter fidèlement
+      le fonctionnement P2P et à clarifier que <em>le contenu appartient aux utilisateurs</em>.
+    </p>
+
+    <h2>7. Conservation et suppression</h2>
+    <p>
+      Les sessions sont conçues pour être éphémères (TTL, « Disparaître », purge).
+      L’Éditeur ne conserve pas d’historique cloud de vos fichiers.
+      Un destinataire peut toutefois enregistrer localement un contenu reçu : cela relève
+      de sa responsabilité et de celle de l’émetteur qui a partagé.
+    </p>
+
+    <h2>8. Transferts hors UE / sous-traitants techniques</h2>
+    <p>
+      Si vous utilisez le mode Internet, la signalisation peut passer par des prestataires
+      d’infrastructure (ex. Cloudflare). Consultez également leurs politiques.
+      Google Play traite les données d’achat selon ses propres règles.
+    </p>
+
+    <h2>9. Vos droits (RGPD — si applicable)</h2>
+    <p>
+      Pour les données personnelles éventuellement traitées par l’Éditeur
+      (ex. e-mails de support, statut d’abonnement), vous pouvez demander l’accès,
+      la rectification ou l’effacement dans les limites légales, en écrivant à
+      <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>.
+    </p>
+    <p>
+      Concernant les contenus P2P échangés entre appareils : l’Éditeur n’y a pas accès
+      et ne peut donc pas les restituer, les corriger ni les supprimer à votre place.
+    </p>
+
+    <h2>10. Mineurs</h2>
+    <p>
+      L’Application n’est pas destinée aux enfants. Les parents / tuteurs restent responsables
+      de l’usage de l’appareil et des contenus partagés.
+    </p>
+
+    <h2>11. Sécurité</h2>
+    <p>
+      Des mesures techniques (sessions courtes, PIN, chiffrement de transport WebRTC,
+      E2EE optionnel / selon modes) réduisent les risques, sans garantir une sécurité absolue.
+      Vérifiez toujours le destinataire, le PIN et, en local HTTPS, l’adresse affichée avant d’accepter un certificat.
+    </p>
+
+    <h2>12. Modifications</h2>
+    <p>
+      Cette politique peut être mise à jour. La version applicable est celle publiée à cette URL
+      (et/ou affichée dans l’Application). La date de mise à jour figure en en-tête.
+    </p>
+
+    <h2>13. Contact</h2>
+    <p>
+      Questions confidentialité / légales :<br/>
+      <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>
+    </p>
+
+    <footer>
+      GhostShare — politique de confidentialité. Document informatif destiné au Play Store et aux utilisateurs.
+      Pour une validation juridique personnalisée (avocat), faites relire ce texte avant publication définitive.
+    </footer>
+  </main>
+</body>
+</html>
