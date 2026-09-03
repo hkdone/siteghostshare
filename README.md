@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Politique de confidentialité — GhostShare</title>
-  <meta name="description" content="Politique de confidentialité de GhostShare : partage P2P éphémère, sans cloud de contenu."/>
+  <title>Politique de confidentialité — PhantomLink</title>
+  <meta name="description" content="Politique de confidentialité de PhantomLink : partage P2P éphémère, sans cloud de contenu."/>
   <style>
     :root {
       --bg: #f6f4ef;
@@ -68,16 +68,16 @@
 <body>
   <main class="wrap">
     <header>
-      <h1>Politique de confidentialité — GhostShare</h1>
+      <h1>Politique de confidentialité — PhantomLink</h1>
       <p class="meta">Éditeur : Jean Virassa · Contact : <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a><br/>
-      Dernière mise à jour : 26 août 2026</p>
+      Dernière mise à jour : 3 septembre 2026</p>
     </header>
 
     <div class="card">
       <strong>En bref.</strong>
-      GhostShare est une application de partage <em>éphémère</em> en pair-à-pair (P2P)
+      PhantomLink est une application de partage <em>éphémère</em> en pair-à-pair (P2P)
       et/ou en local (Wi‑Fi, SoftAP, VPN). Les fichiers, secrets, messages, flux audio/vidéo
-      et autres contenus échangés <strong>ne sont pas stockés dans un cloud GhostShare</strong>
+      et autres contenus échangés <strong>ne sont pas stockés dans un cloud PhantomLink</strong>
       et <strong>ne sont pas accessibles à l’éditeur</strong> dans le cadre normal du service.
       Seules des métadonnées techniques de connexion / signalisation peuvent transiter
       de façon éphémère. Vous restez responsable du contenu que vous envoyez ou recevez.
@@ -85,7 +85,7 @@
 
     <h2>1. Qui sommes-nous ?</h2>
     <p>
-      GhostShare (« l’Application ») est éditée par Jean Virassa (« l’Éditeur »).
+      PhantomLink (« l’Application ») est éditée par Jean Virassa (« l’Éditeur »).
       L’Application permet de partager temporairement des contenus numériques entre appareils
       (fichier, texte secret, chat, visio, conférence, contact, position, etc.),
       soit sur un réseau local, soit via une connexion Internet P2P initiée par un hôte Pro.
@@ -100,13 +100,13 @@
     <p>
       En conséquence, l’Éditeur <strong>n’a pas accès</strong>, dans le fonctionnement normal,
       au contenu des échanges, <strong>n’en devient pas propriétaire</strong> et
-      <strong>ne les héberge pas</strong> sur une infrastructure de stockage GhostShare.
+      <strong>ne les héberge pas</strong> sur une infrastructure de stockage PhantomLink.
     </p>
 
     <h2>3. Quelles données sont traitées ?</h2>
     <h3>3.1 Contenu que vous partagez (hors portée de l’Éditeur)</h3>
     <p>
-      GhostShare n’opère pas de stockage cloud pour vos fichiers, secrets, messages, audio ou vidéo.
+      PhantomLink n’opère pas de stockage cloud pour vos fichiers, secrets, messages, audio ou vidéo.
       Ces contenus restent entre appareils (mémoire ou session) et sont purgés à la fin de celle-ci.
       L’éditeur n’en est ni propriétaire ni dépositaire. Seules des métadonnées techniques de
       connexion et de signalisation (telles que les adresses IP et les horodatages de transit)
@@ -157,7 +157,7 @@
 
     <h2>6. Responsabilité du contenu — protection de l’Éditeur</h2>
     <p>
-      GhostShare est un outil technique de transmission éphémère. L’Éditeur
+      PhantomLink est un outil technique de transmission éphémère. L’Éditeur
       <strong>n’exerce pas de contrôle éditorial</strong> sur les contenus échangés via P2P / local.
     </p>
     <ul>
@@ -228,7 +228,7 @@
     </p>
 
     <footer>
-      GhostShare — politique de confidentialité. Document informatif destiné au Play Store et aux utilisateurs.
+      PhantomLink — politique de confidentialité. Document informatif destiné au Play Store et aux utilisateurs.
       Pour une validation juridique personnalisée (avocat), faites relire ce texte avant publication définitive.
     </footer>
   </main>
