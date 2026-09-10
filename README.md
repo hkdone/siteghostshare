@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Politique de confidentialité — PhantomLink</title>
-  <meta name="description" content="Politique de confidentialité de PhantomLink : partage P2P éphémère, sans cloud de contenu."/>
+  <meta name="description" content="Politique de confidentialité de PhantomLink : coffres PhantomLock, partage P2P éphémère, sans cloud de contenu."/>
   <style>
     :root {
       --bg: #f6f4ef;
@@ -44,6 +44,7 @@
       font-size: 1.15rem;
       margin: 28px 0 10px;
     }
+    h3 { font-size: 1.02rem; margin: 18px 0 8px; }
     p, li { font-size: 0.98rem; }
     ul { padding-left: 1.2rem; }
     li { margin: 0.35rem 0; }
@@ -70,14 +71,16 @@
     <header>
       <h1>Politique de confidentialité — PhantomLink</h1>
       <p class="meta">Éditeur : Jean Virassa · Contact : <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a><br/>
-      Dernière mise à jour : 3 septembre 2026</p>
+      Dernière mise à jour : 10 septembre 2026</p>
     </header>
 
     <div class="card">
       <strong>En bref.</strong>
-      PhantomLink est une application de partage <em>éphémère</em> en pair-à-pair (P2P)
-      et/ou en local (Wi‑Fi, SoftAP, VPN). Les fichiers, secrets, messages, flux audio/vidéo
-      et autres contenus échangés <strong>ne sont pas stockés dans un cloud PhantomLink</strong>
+      PhantomLink est une application de <strong>coffres locaux chiffrés (PhantomLock)</strong>
+      et de partage <em>éphémère</em> en pair-à-pair (P2P) et/ou en local
+      (Wi‑Fi, partage de connexion, VPN).
+      Les fichiers, secrets, messages et flux audio échangés
+      <strong>ne sont pas stockés dans un cloud PhantomLink</strong>
       et <strong>ne sont pas accessibles à l’éditeur</strong> dans le cadre normal du service.
       Seules des métadonnées techniques de connexion / signalisation peuvent transiter
       de façon éphémère. Vous restez responsable du contenu que vous envoyez ou recevez.
@@ -86,27 +89,29 @@
     <h2>1. Qui sommes-nous ?</h2>
     <p>
       PhantomLink (« l’Application ») est éditée par Jean Virassa (« l’Éditeur »).
-      L’Application permet de partager temporairement des contenus numériques entre appareils
-      (fichier, texte secret, chat, visio, conférence, contact, position, etc.),
+      L’Application permet de stocker des fichiers dans des coffres locaux chiffrés (PhantomLock),
+      de partager temporairement un fichier ou un mot de passe (envoyer / demander),
+      et de collaborer via un chat éphémère ou une conférence audio,
       soit sur un réseau local, soit via une connexion Internet P2P initiée par un hôte Pro.
     </p>
 
-    <h2>2. Principe technologique (P2P / local)</h2>
+    <h2>2. Principe technologique (P2P / local / PhantomLock)</h2>
     <p>Selon le mode choisi :</p>
     <ul>
-      <li><strong>LAN / SoftAP / VPN</strong> : un mini-serveur éphémère tourne sur l’appareil hôte ; le contenu est servi depuis cet appareil (souvent en mémoire vive pour les secrets / chats).</li>
-      <li><strong>Internet P2P</strong> : le contenu et le média transitent en WebRTC direct entre appareils. Un service de signalisation tiers (ex. Worker Cloudflare) peut échanger uniquement des données techniques de rendez-vous (offre/réponse/candidats ICE), <strong>pas vos fichiers ni vos flux média</strong>.</li>
+      <li><strong>Wi‑Fi local / partage de connexion / VPN</strong> : un mini-serveur éphémère tourne sur l’appareil hôte ; le contenu est servi depuis cet appareil (souvent en mémoire vive pour les secrets / chats).</li>
+      <li><strong>Internet P2P</strong> : le contenu et l’audio transitent en WebRTC direct entre appareils. Un service de signalisation tiers (ex. Worker Cloudflare) peut échanger uniquement des données techniques de rendez-vous (offre/réponse/candidats ICE), <strong>pas vos fichiers ni vos flux audio</strong>.</li>
+      <li><strong>PhantomLock</strong> : des coffres chiffrés sont stockés <strong>uniquement sur votre appareil</strong> (pas de cloud PhantomLink). L’accès repose sur un PIN / biométrie locaux. L’envoi d’un coffre via Internet (Pro) utilise le même canal P2P ; le destinataire ré-importe le contenu dans son propre PhantomLock.</li>
     </ul>
     <p>
       En conséquence, l’Éditeur <strong>n’a pas accès</strong>, dans le fonctionnement normal,
-      au contenu des échanges, <strong>n’en devient pas propriétaire</strong> et
+      au contenu des échanges ni au contenu des coffres locaux, <strong>n’en devient pas propriétaire</strong> et
       <strong>ne les héberge pas</strong> sur une infrastructure de stockage PhantomLink.
     </p>
 
     <h2>3. Quelles données sont traitées ?</h2>
     <h3>3.1 Contenu que vous partagez (hors portée de l’Éditeur)</h3>
     <p>
-      PhantomLink n’opère pas de stockage cloud pour vos fichiers, secrets, messages, audio ou vidéo.
+      PhantomLink n’opère pas de stockage cloud pour vos fichiers, secrets, messages ou audio.
       Ces contenus restent entre appareils (mémoire ou session) et sont purgés à la fin de celle-ci.
       L’éditeur n’en est ni propriétaire ni dépositaire. Seules des métadonnées techniques de
       connexion et de signalisation (telles que les adresses IP et les horodatages de transit)
@@ -118,8 +123,10 @@
     <p>L’Application peut stocker <strong>uniquement sur votre appareil</strong> :</p>
     <ul>
       <li>préférences (ex. écrans d’aide déjà vus) ;</li>
-      <li>compteurs freemium (ex. partages fichier / vCard par jour) ;</li>
-      <li>état d’abonnement / d’achat Pro fourni par le magasin d’applications.</li>
+      <li>compteurs freemium (ex. partages fichier) ;</li>
+      <li>état d’abonnement / d’achat Pro fourni par le magasin d’applications ;</li>
+      <li>coffres PhantomLock (fichiers chiffrés, métadonnées d’index, blobs de clés enveloppés) — accessibles seulement avec votre PIN / biométrie locaux ;</li>
+      <li>paramètres de verrouillage app (PIN / empreinte) liés à PhantomLock.</li>
     </ul>
 
     <h3>3.3 Achats in-app</h3>
@@ -133,17 +140,16 @@
       En mode Internet P2P, la signalisation technique (ICE) transite par une infrastructure
       de rendez-vous ou un worker de mise en relation. Ces services techniques traitent uniquement
       les données de routage nécessaires à l’établissement de la connexion pair-à-pair,
-      à l’exclusion stricte de tout fichier ou flux média.
+      à l’exclusion stricte de tout fichier ou flux audio.
     </p>
 
     <h2>4. Permissions de l’appareil</h2>
     <p>Selon les fonctions que vous activez, l’Application peut demander :</p>
     <ul>
-      <li>caméra (scan QR, visio) ;</li>
-      <li>micro (conférence / visio) ;</li>
-      <li>capture d’écran / projection média (assistance écran Android) ;</li>
-      <li>accès réseau / Wi‑Fi voisin / localisation approximative (SoftAP, point de RDV si vous le saisissez) ;</li>
-      <li>stockage / fichiers (choix d’un document à envoyer).</li>
+      <li>caméra (scan de QR codes pour rejoindre une session) ;</li>
+      <li>micro (conférence audio) ;</li>
+      <li>accès réseau / Wi‑Fi voisin / localisation approximative (partage de connexion Wi‑Fi) ;</li>
+      <li>stockage / fichiers (choix d’un document à envoyer ou export depuis un coffre).</li>
     </ul>
     <p>Ces permissions servent au partage demandé par l’utilisateur, pas à de la publicité ciblée.</p>
 
@@ -153,34 +159,32 @@
       peut accéder au contenu de la session pendant sa durée de vie.
       <strong>Vous êtes seul responsable</strong> des personnes avec qui vous partagez
       et des informations que vous divulguez.
+      Pour PhantomLock, toute personne qui connaît votre PIN (ou peut utiliser votre biométrie)
+      peut ouvrir les coffres de l’appareil.
     </p>
 
     <h2>6. Responsabilité du contenu — protection de l’Éditeur</h2>
     <p>
-      PhantomLink est un outil technique de transmission éphémère. L’Éditeur
-      <strong>n’exerce pas de contrôle éditorial</strong> sur les contenus échangés via P2P / local.
+      PhantomLink est un outil technique de transmission éphémère et de stockage local chiffré.
+      L’Éditeur <strong>n’exerce pas de contrôle éditorial</strong> sur les contenus échangés
+      via P2P / local ni sur ceux placés dans PhantomLock.
     </p>
     <ul>
-      <li>Vous êtes <strong>entièrement responsable</strong> des contenus que vous envoyez, demandez, affichez ou stockez temporairement sur votre appareil.</li>
+      <li>Vous êtes <strong>entièrement responsable</strong> des contenus que vous envoyez, demandez, affichez ou stockez sur votre appareil.</li>
       <li>Vous vous engagez à respecter les lois applicables (notamment propriété intellectuelle, vie privée des tiers, contenus illicites).</li>
-      <li>L’Éditeur ne garantit <strong>ni la légalité, ni l’exactitude, ni l’innocuité</strong> des contenus échangés entre utilisateurs.</li>
+      <li>L’Éditeur ne garantit <strong>ni la légalité, ni l’exactitude, ni l’innocuité</strong> des contenus échangés ou stockés entre utilisateurs.</li>
       <li>L’Éditeur n’est <strong>ni propriétaire, ni dépositaire, ni hébergeur de stockage</strong> de ces contenus dans le sens d’un service cloud de fichiers.</li>
       <li>Dans la mesure permise par le droit applicable, l’Éditeur ne saurait être tenu responsable des préjudices résultant du contenu échangé, d’un usage abusif, d’une mauvaise configuration réseau, d’un échec de connexion P2P, ou de la conservation locale par un destinataire.</li>
     </ul>
-    <p>
-      <strong>Limite importante (transparence) :</strong>
-      aucune clause ne peut écarter toute responsabilité dans tous les cas prévus par la loi
-      (par exemple obligations légales spécifiques, faute personnelle caractérisée, ou régimes
-      impératifs de protection des consommateurs). Cette politique vise à refléter fidèlement
-      le fonctionnement P2P et à clarifier que <em>le contenu appartient aux utilisateurs</em>.
-    </p>
 
     <h2>7. Conservation et suppression</h2>
     <p>
-      Les sessions sont conçues pour être éphémères (TTL, « Disparaître », purge).
+      Les sessions sont conçues pour être éphémères (TTL automatique Free / Pro, « Disparaître », purge).
       L’Éditeur ne conserve pas d’historique cloud de vos fichiers.
       Un destinataire peut toutefois enregistrer localement un contenu reçu : cela relève
       de sa responsabilité et de celle de l’émetteur qui a partagé.
+      Les coffres PhantomLock persistent sur l’appareil jusqu’à suppression manuelle
+      (ou destruction après échecs d’authentification répétés) ; l’Éditeur n’y a pas accès.
     </p>
 
     <h2>8. Transferts hors UE / sous-traitants techniques</h2>
@@ -198,8 +202,8 @@
       <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>.
     </p>
     <p>
-      Concernant les contenus P2P échangés entre appareils : l’Éditeur n’y a pas accès
-      et ne peut donc pas les restituer, les corriger ni les supprimer à votre place.
+      Concernant les contenus P2P échangés entre appareils et les coffres PhantomLock locaux :
+      l’Éditeur n’y a pas accès et ne peut donc pas les restituer, les corriger ni les supprimer à votre place.
     </p>
 
     <h2>10. Mineurs</h2>
@@ -211,8 +215,9 @@
     <h2>11. Sécurité</h2>
     <p>
       Des mesures techniques (sessions courtes, PIN, chiffrement de transport WebRTC,
-      E2EE optionnel / selon modes) réduisent les risques, sans garantir une sécurité absolue.
-      Vérifiez toujours le destinataire, le PIN et, en local HTTPS, l’adresse affichée avant d’accepter un certificat.
+      coffres PhantomLock chiffrés au repos, double authentification,
+      anti-capture sur écrans sensibles en Pro) réduisent les risques, sans garantir une sécurité absolue.
+      Vérifiez toujours le destinataire, le PIN et, le cas échéant, l’empreinte de confiance.
     </p>
 
     <h2>12. Modifications</h2>
