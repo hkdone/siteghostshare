@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Politique de confidentialité — PhantomLink</title>
-  <meta name="description" content="Politique de confidentialité de PhantomLink : coffres PhantomLock, partage P2P éphémère, sans cloud de contenu."/>
+  <title>Politique de Confidentialité & Mentions Légales — PhantomLink</title>
+  <meta name="description" content="Politique de confidentialité, clause de non-responsabilité et architecture Zero-Knowledge de PhantomLink : partage P2P éphémère et coffres chiffrés locaux sans cloud de contenu."/>
   <style>
     :root {
       --bg: #f6f4ef;
@@ -13,6 +13,9 @@
       --card: #ffffff;
       --line: #d8dde3;
       --accent: #0f6b5c;
+      --warning-bg: #fff8eb;
+      --warning-border: #f5d499;
+      --warning-text: #875a00;
     }
     * { box-sizing: border-box; }
     body {
@@ -22,12 +25,12 @@
         radial-gradient(900px 420px at 10% -10%, #e7efe9, transparent),
         var(--bg);
       color: var(--ink);
-      line-height: 1.55;
+      line-height: 1.6;
     }
     .wrap {
-      max-width: 720px;
+      max-width: 760px;
       margin: 0 auto;
-      padding: 40px 20px 72px;
+      padding: 40px 20px 80px;
     }
     header {
       margin-bottom: 28px;
@@ -41,25 +44,55 @@
     }
     .meta { color: var(--muted); font-size: 0.95rem; margin: 0; }
     h2 {
-      font-size: 1.15rem;
-      margin: 28px 0 10px;
+      font-size: 1.25rem;
+      margin: 32px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line);
     }
-    h3 { font-size: 1.02rem; margin: 18px 0 8px; }
+    h3 { font-size: 1.05rem; margin: 20px 0 8px; }
     p, li { font-size: 0.98rem; }
-    ul { padding-left: 1.2rem; }
-    li { margin: 0.35rem 0; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.4rem 0; }
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 12px;
-      padding: 16px 18px;
-      margin: 16px 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+    .card-warning {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 18px 0;
+      color: var(--warning-text);
+    }
+    .card-warning strong {
+      color: #634200;
     }
     .card strong { color: var(--accent); }
-    a { color: var(--accent); }
+    a { color: var(--accent); font-weight: 500; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #eef2f0;
+      color: var(--ink);
+      font-weight: 600;
+    }
     footer {
-      margin-top: 36px;
-      padding-top: 16px;
+      margin-top: 48px;
+      padding-top: 20px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 0.88rem;
@@ -69,172 +102,124 @@
 <body>
   <main class="wrap">
     <header>
-      <h1>Politique de confidentialité — PhantomLink</h1>
-      <p class="meta">Éditeur : Jean Virassa · Contact : <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a><br/>
-      Dernière mise à jour : 10 septembre 2026</p>
+      <h1>Politique de Confidentialité & Mentions Légales</h1>
+      <p class="meta">Application : <strong>PhantomLink (GhostMesh)</strong> · Éditeur : Jean Virassa<br/>
+      Contact : <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a> · Dernière mise à jour : 13 octobre 2026</p>
     </header>
 
     <div class="card">
-      <strong>En bref.</strong>
-      PhantomLink est une application de <strong>coffres locaux chiffrés (PhantomLock)</strong>
-      et de partage <em>éphémère</em> en pair-à-pair (P2P) et/ou en local
-      (Wi‑Fi, partage de connexion, VPN).
-      Les fichiers, secrets, messages et flux audio échangés
-      <strong>ne sont pas stockés dans un cloud PhantomLink</strong>
-      et <strong>ne sont pas accessibles à l’éditeur</strong> dans le cadre normal du service.
-      Seules des métadonnées techniques de connexion / signalisation peuvent transiter
-      de façon éphémère. Vous restez responsable du contenu que vous envoyez ou recevez.
+      <strong>Synthèse en langage clair.</strong>
+      PhantomLink est un outil logiciel pair-à-pair (P2P direct) et de coffres locaux chiffrés.
+      <strong>Aucun fichier, secret, message ou flux audio ne transite par, ni n'est hébergé sur un serveur de stockage cloud appartenant à l'éditeur.</strong>
+      L'éditeur n'a aucun accès à vos données et ne tient aucun registre ou historique de vos échanges. Vous demeurez l'unique responsable du contenu que vous transférez ou recevez.
     </div>
 
-    <h2>1. Qui sommes-nous ?</h2>
+    <h2>1. Statut Juridique d'Éditeur Logiciel (Pure Tool Provider)</h2>
     <p>
-      PhantomLink (« l’Application ») est éditée par Jean Virassa (« l’Éditeur »).
-      L’Application permet de stocker des fichiers dans des coffres locaux chiffrés (PhantomLock),
-      de partager temporairement un fichier ou un mot de passe (envoyer / demander),
-      et de collaborer via un chat éphémère ou une conférence audio,
-      soit sur un réseau local, soit via une connexion Internet P2P initiée par un hôte Pro.
-    </p>
-
-    <h2>2. Principe technologique (P2P / local / PhantomLock)</h2>
-    <p>Selon le mode choisi :</p>
-    <ul>
-      <li><strong>Wi‑Fi local / partage de connexion / VPN</strong> : un mini-serveur éphémère tourne sur l’appareil hôte ; le contenu est servi depuis cet appareil (souvent en mémoire vive pour les secrets / chats).</li>
-      <li><strong>Internet P2P</strong> : le contenu et l’audio transitent en WebRTC direct entre appareils. Un service de signalisation tiers (ex. Worker Cloudflare) peut échanger uniquement des données techniques de rendez-vous (offre/réponse/candidats ICE), <strong>pas vos fichiers ni vos flux audio</strong>.</li>
-      <li><strong>PhantomLock</strong> : des coffres chiffrés sont stockés <strong>uniquement sur votre appareil</strong> (pas de cloud PhantomLink). L’accès repose sur un PIN / biométrie locaux. L’envoi d’un coffre via Internet (Pro) utilise le même canal P2P ; le destinataire ré-importe le contenu dans son propre PhantomLock.</li>
-    </ul>
-    <p>
-      En conséquence, l’Éditeur <strong>n’a pas accès</strong>, dans le fonctionnement normal,
-      au contenu des échanges ni au contenu des coffres locaux, <strong>n’en devient pas propriétaire</strong> et
-      <strong>ne les héberge pas</strong> sur une infrastructure de stockage PhantomLink.
-    </p>
-
-    <h2>3. Quelles données sont traitées ?</h2>
-    <h3>3.1 Contenu que vous partagez (hors portée de l’Éditeur)</h3>
-    <p>
-      PhantomLink n’opère pas de stockage cloud pour vos fichiers, secrets, messages ou audio.
-      Ces contenus restent entre appareils (mémoire ou session) et sont purgés à la fin de celle-ci.
-      L’éditeur n’en est ni propriétaire ni dépositaire. Seules des métadonnées techniques de
-      connexion et de signalisation (telles que les adresses IP et les horodatages de transit)
-      peuvent transiter de manière éphémère par l’infrastructure de routage, sans faire l’objet
-      d’une exploitation commerciale ou d’un stockage persistant à des fins de profilage.
-    </p>
-
-    <h3>3.2 Données techniques locales sur votre appareil</h3>
-    <p>L’Application peut stocker <strong>uniquement sur votre appareil</strong> :</p>
-    <ul>
-      <li>préférences (ex. écrans d’aide déjà vus) ;</li>
-      <li>compteurs freemium (ex. partages fichier) ;</li>
-      <li>état d’abonnement / d’achat Pro fourni par le magasin d’applications ;</li>
-      <li>coffres PhantomLock (fichiers chiffrés, métadonnées d’index, blobs de clés enveloppés) — accessibles seulement avec votre PIN / biométrie locaux ;</li>
-      <li>paramètres de verrouillage app (PIN / empreinte) liés à PhantomLock.</li>
-    </ul>
-
-    <h3>3.3 Achats in-app</h3>
-    <p>
-      Les paiements sont traités par Google Play (ou autre magasin). L’Éditeur peut recevoir un
-      statut d’abonnement (produit, validité), mais <strong>pas vos données bancaires</strong>.
-    </p>
-
-    <h3>3.4 Signalisation Internet et infrastructure</h3>
-    <p>
-      En mode Internet P2P, la signalisation technique (ICE) transite par une infrastructure
-      de rendez-vous ou un worker de mise en relation. Ces services techniques traitent uniquement
-      les données de routage nécessaires à l’établissement de la connexion pair-à-pair,
-      à l’exclusion stricte de tout fichier ou flux audio.
-    </p>
-
-    <h2>4. Permissions de l’appareil</h2>
-    <p>Selon les fonctions que vous activez, l’Application peut demander :</p>
-    <ul>
-      <li>caméra (scan de QR codes pour rejoindre une session) ;</li>
-      <li>micro (conférence audio) ;</li>
-      <li>accès réseau / Wi‑Fi voisin / localisation approximative (partage de connexion Wi‑Fi) ;</li>
-      <li>stockage / fichiers (choix d’un document à envoyer ou export depuis un coffre).</li>
-    </ul>
-    <p>Ces permissions servent au partage demandé par l’utilisateur, pas à de la publicité ciblée.</p>
-
-    <h2>5. Destinataires et partage volontaire</h2>
-    <p>
-      Toute personne qui dispose du lien / QR / accès réseau et, le cas échéant, du PIN,
-      peut accéder au contenu de la session pendant sa durée de vie.
-      <strong>Vous êtes seul responsable</strong> des personnes avec qui vous partagez
-      et des informations que vous divulguez.
-      Pour PhantomLock, toute personne qui connaît votre PIN (ou peut utiliser votre biométrie)
-      peut ouvrir les coffres de l’appareil.
-    </p>
-
-    <h2>6. Responsabilité du contenu — protection de l’Éditeur</h2>
-    <p>
-      PhantomLink est un outil technique de transmission éphémère et de stockage local chiffré.
-      L’Éditeur <strong>n’exerce pas de contrôle éditorial</strong> sur les contenus échangés
-      via P2P / local ni sur ceux placés dans PhantomLock.
+      L'application PhantomLink est fournie en tant qu'outil logiciel technique neutre et décentralisé.
     </p>
     <ul>
-      <li>Vous êtes <strong>entièrement responsable</strong> des contenus que vous envoyez, demandez, affichez ou stockez sur votre appareil.</li>
-      <li>Vous vous engagez à respecter les lois applicables (notamment propriété intellectuelle, vie privée des tiers, contenus illicites).</li>
-      <li>L’Éditeur ne garantit <strong>ni la légalité, ni l’exactitude, ni l’innocuité</strong> des contenus échangés ou stockés entre utilisateurs.</li>
-      <li>L’Éditeur n’est <strong>ni propriétaire, ni dépositaire, ni hébergeur de stockage</strong> de ces contenus dans le sens d’un service cloud de fichiers.</li>
-      <li>Dans la mesure permise par le droit applicable, l’Éditeur ne saurait être tenu responsable des préjudices résultant du contenu échangé, d’un usage abusif, d’une mauvaise configuration réseau, d’un échec de connexion P2P, ou de la conservation locale par un destinataire.</li>
+      <li><strong>Absence totale d'hébergement :</strong> L'éditeur n'exploite aucun serveur d'hébergement, de stockage de fichiers ou de base de données de contenu. L'éditeur <strong>n'est pas un hébergeur de données</strong> au sens de l'article 6 de la Loi pour la Confiance dans l'Économie Numérique (LCEN) ni de la Directive e-Commerce européenne.</li>
+      <li><strong>Zéro contrôle éditorial :</strong> L'éditeur n'exerce aucun contrôle technique, a priori ou a posteriori, sur les données échangées entre pairs ou scellées dans les coffres de l'application.</li>
     </ul>
 
-    <h2>7. Conservation et suppression</h2>
+    <h2>2. Clause de Non-Responsabilité & Exonération de Garantie</h2>
     <p>
-      Les sessions sont conçues pour être éphémères (TTL automatique Free / Pro, « Disparaître », purge).
-      L’Éditeur ne conserve pas d’historique cloud de vos fichiers.
-      Un destinataire peut toutefois enregistrer localement un contenu reçu : cela relève
-      de sa responsabilité et de celle de l’émetteur qui a partagé.
-      Les coffres PhantomLock persistent sur l’appareil jusqu’à suppression manuelle
-      (ou destruction après échecs d’authentification répétés) ; l’Éditeur n’y a pas accès.
+      L'utilisateur final est le seul et unique responsable des contenus émis, demandés, reçus ou stockés via l'application :
     </p>
+    <ul>
+      <li><strong>Licéité des contenus :</strong> L'utilisateur s'engage à respecter scrupuleusement les lois et réglementations en vigueur dans sa juridiction (droits de propriété intellectuelle, secret des affaires, respect de la vie privée, interdiction des contenus illicites).</li>
+      <li><strong>Innocuité & Sécurité :</strong> L'éditeur décline toute responsabilité quant à l'exactitude, la légalité ou la dangerosité (virus, logiciels malveillants, malwares, rançongiciels) des fichiers reçus d'un tiers. L'utilisateur a la responsabilité exclusive de vérifier l'identité de son correspondant avant tout téléchargement ou exécution.</li>
+      <li><strong>Fourniture « En l'état » (Clause AS IS) :</strong> Le logiciel est fourni sans garantie d'aucune sorte, expresse ou implicite, quant à sa continuité de service, son adéquation à un besoin spécifique ou son invulnérabilité face à des compromissions matérielles du terminal récepteur. En aucun cas l'auteur ne pourra être tenu responsable de préjudices directs ou indirects, pertes de données ou litiges consécutifs à l'utilisation du logiciel.</li>
+    </ul>
 
-    <h2>8. Transferts hors UE / sous-traitants techniques</h2>
-    <p>
-      Si vous utilisez le mode Internet, la signalisation peut passer par des prestataires
-      d’infrastructure (ex. Cloudflare). Consultez également leurs politiques.
-      Google Play traite les données d’achat selon ses propres règles.
-    </p>
+    <div class="card-warning">
+      <strong>Transparence sur l'absence d'audit de sécurité indépendant certifié :</strong><br/>
+      Le logiciel PhantomLink <strong>n'a pas fait l'objet d'un audit de sécurité payant ni d'une certification formelle par un organisme d'État (type ANSSI) ou un cabinet d'audit spécialisé (type Quarkslab, Cure53, Synacktiv)</strong>. Les garanties énoncées reposent sur la conception interne de l'éditeur et l'application rigoureuse de primitives cryptographiques reconnues (AES-256-GCM, WebRTC DTLS). Les utilisateurs traitant des données hautement sensibles ou classifiées sont invités à conduire leur propre évaluation de risque avant usage.
+    </div>
 
-    <h2>9. Vos droits (RGPD — si applicable)</h2>
-    <p>
-      Pour les données personnelles éventuellement traitées par l’Éditeur
-      (ex. e-mails de support, statut d’abonnement), vous pouvez demander l’accès,
-      la rectification ou l’effacement dans les limites légales, en écrivant à
-      <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>.
-    </p>
-    <p>
-      Concernant les contenus P2P échangés entre appareils et les coffres PhantomLock locaux :
-      l’Éditeur n’y a pas accès et ne peut donc pas les restituer, les corriger ni les supprimer à votre place.
-    </p>
+    <h2>3. Absence Totale de Journalisation (No-Logs Policy)</h2>
+    <p>L'éditeur applique une politique stricte de zéro donnée personnelle :</p>
+    <ul>
+      <li><strong>Zéro collecte d'identité :</strong> Aucun nom, aucune adresse e-mail ni aucun numéro de téléphone n'est exigé pour faire fonctionner l'application.</li>
+      <li><strong>Zéro historique :</strong> L'éditeur ne conserve, ne vend et ne monétise aucun log de transfert, aucun journal de session et aucun historique de messages.</li>
+      <li><strong>Purge volatile :</strong> Les tampons de mémoire vive (RAM) sont libérés et réécriturés dès la clôture de la session sur l'appareil.</li>
+    </ul>
 
-    <h2>10. Mineurs</h2>
+    <h2>4. Rôle des Services Tiers d'Infrastructure</h2>
     <p>
-      L’Application n’est pas destinée aux enfants. Les parents / tuteurs restent responsables
-      de l’usage de l’appareil et des contenus partagés.
+      Pour permettre l'interconnexion P2P directe et les notifications sans créer de compte central, l'application s'appuie sur des composants tiers strictement limités :
     </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Service Tiers</th>
+          <th>Rôle Technique</th>
+          <th>Nature des Données</th>
+          <th>Confidentialité & Conservation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Cloudflare Workers</strong></td>
+          <td>Courtier de signalisation WebRTC éphémère (rendez-vous initial pour négocier SDP/ICE).</td>
+          <td>Adresses IP de transit, horodatages et identifiants de session temporaires.</td>
+          <td><strong>100 % volatile en mémoire vive (RAM)</strong>. Aucun stockage de contenu. Journaux techniques réseau régis par la politique de Cloudflare Inc.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Firebase (FCM)</strong></td>
+          <td>Relais de réveil push asynchrone (fonctionnalité Phantom Wake).</td>
+          <td>Enveloppe binaire opaque chiffrée AES-256-GCM via clé symétrique locale (PSK).</td>
+          <td><strong>Relais aveugle (Zero-Knowledge)</strong> : Google transporte des octets chiffrés sans détenir la clé de déchiffrement stockée dans le Keystore matériel du smartphone.</td>
+        </tr>
+        <tr>
+          <td><strong>Google Play Billing</strong></td>
+          <td>Gestion des abonnements et achats de la version Pro.</td>
+          <td>Traitement financier de la transaction.</td>
+          <td>L'éditeur n'a accès à <strong>aucune coordonnée bancaire</strong>, gérée exclusivement par Google LLC.</td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2>11. Sécurité</h2>
+    <h2>5. Fonctionnalités Réelles & Périmètre Technique</h2>
+    <p>L'application propose exclusivement les fonctions suivantes :</p>
+    <ul>
+      <li><strong>Partage de fichiers (mono et multi-fichiers) :</strong> Transfert direct en local (LAN/SoftAP) ou par Internet P2P WebRTC sans hébergement intermédiaire.</li>
+      <li><strong>Partage de secrets & mots de passe :</strong> Transmission volatile autodestructible après consultation.</li>
+      <li><strong>Demande de fichiers / secrets (Option Pro) :</strong> Génération d'un lien de dépôt sécurisé pour recevoir des éléments directement sur son appareil.</li>
+      <li><strong>Chat éphémère :</strong> Messagerie instantanée en mémoire vive (RAM-only), sans historique ni serveur de messages.</li>
+      <li><strong>Conférence vocale Push-To-Talk (PTT) :</strong> Audio direct chiffré de bout en bout (DTLS-SRTP).</li>
+      <li><strong>Coffres PhantomLock :</strong> Stockage local chiffré au repos (AES-256) sous protection exclusive du PIN / mot de passe de l'utilisateur.</li>
+      <li><strong>Contacts Favoris (Phantom Wake) :** Réveil push sécurisé entre terminaux appairés via clé symétrique (PSK 256 bits).</li>
+    </ul>
+
+    <h2>6. Modèle de Menace & Recommandations de Sécurité</h2>
+    <ul>
+      <li><strong>Mode Local (LAN HTTP pour fichiers) :</strong> Le contenu est chiffré applicativement de bout en bout (clé dans l'ancre <code>#key</code>), protégeant contre l'<strong>écoute passive</strong> (sniffing Wi-Fi). Sur un réseau public hostile (café, gare) où un attaquant actif pourrait modifier le trafic HTTP (ARP spoofing), l'utilisateur est invité à activer le <strong>mode Point d'accès direct (SoftAP)</strong> ou le <strong>mode P2P Internet</strong>.</li>
+      <li><strong>Mode P2P Internet :</strong> Le tunnel est sécurisé par DTLS. Pour les échanges hautement sensibles, les correspondants sont invités à valider visuellement la concordance de leur code de sécurité (SAS) affiché à l'écran.</li>
+      <li><strong>Coffres PhantomLock :</strong> En cas d'oubli définitif du secret ou PIN de déchiffrement, <strong>aucune procédure de réinitialisation ou de récupération n'est possible</strong> par l'éditeur.</li>
+    </ul>
+
+    <h2>7. Permissions Requises par l'Appareil</h2>
+    <p>L'application sollicite uniquement les permissions strictement nécessaires à son fonctionnement :</p>
+    <ul>
+      <li><strong>Caméra :</strong> Scan du QR code pour rejoindre instantanément une session (aucun enregistrement vidéo).</li>
+      <li><strong>Microphone :</strong> Transmission audio lors de la conférence vocale Push-To-Talk uniquement.</li>
+      <li><strong>Accès réseau / Wi-Fi :</strong> Établissement du serveur local éphémère ou du point d'accès SoftAP.</li>
+      <li><strong>Stockage / Fichiers :</strong> Sélection des fichiers à émettre ou enregistrement des fichiers reçus sur le terminal.</li>
+    </ul>
+
+    <h2>8. Vos Droits (RGPD) & Contact</h2>
     <p>
-      Des mesures techniques (sessions courtes, PIN, chiffrement de transport WebRTC,
-      coffres PhantomLock chiffrés au repos, double authentification,
-      anti-capture sur écrans sensibles en Pro) réduisent les risques, sans garantir une sécurité absolue.
-      Vérifiez toujours le destinataire, le PIN et, le cas échéant, l’empreinte de confiance.
+      Étant donné que l'éditeur ne détient aucune base de données d'utilisateurs, aucun compte et aucun fichier, il ne dispose d'aucun moyen technique de consulter, restituer ou supprimer vos contenus locaux ou vos échanges P2P.
     </p>
-
-    <h2>12. Modifications</h2>
     <p>
-      Cette politique peut être mise à jour. La version applicable est celle publiée à cette URL
-      (et/ou affichée dans l’Application). La date de mise à jour figure en en-tête.
-    </p>
-
-    <h2>13. Contact</h2>
-    <p>
-      Questions confidentialité / légales :<br/>
-      <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>
+      Pour toute question légale, technique ou relative au support :<br/>
+      <strong>Jean Virassa</strong> — <a href="mailto:jean.virassa@gmail.com">jean.virassa@gmail.com</a>
     </p>
 
     <footer>
-      PhantomLink — politique de confidentialité. Document informatif destiné au Play Store et aux utilisateurs.
-      Pour une validation juridique personnalisée (avocat), faites relire ce texte avant publication définitive.
+      PhantomLink (GhostMesh) — Document d'information légale et politique de confidentialité. Édition conforme à l'architecture applicative réelle.
     </footer>
   </main>
 </body>
