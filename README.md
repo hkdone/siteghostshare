@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -1633,9 +1633,9 @@
           </button>
         </div>
 
-        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Changer l'apparence clair ou sombre">
-          <span aria-hidden="true" id="theme-icon">◐</span>
-          <span id="theme-label">Thème : Auto</span>
+        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Basculer entre le thème clair et le thème sombre">
+          <span aria-hidden="true" id="theme-icon">☀</span>
+          <span id="theme-label">Thème : Clair</span>
         </button>
       </div>
     </div>
@@ -1659,7 +1659,7 @@
                     </svg>
                     Disponible sur Android
                   </span>
-                  <span>Version iOS en préparation · Réception sur tout navigateur (iPhone, PC, Mac)</span>
+                  <span>Version iOS en préparation · Reçu sur tout navigateur</span>
                 </div>
 
                 <h1 id="hero-title">
@@ -2527,29 +2527,27 @@
       btnBefore.addEventListener("click", () => setDemoState(false));
       btnAfter.addEventListener("click", () => setDemoState(true));
 
-      // 3. Sélecteur de thème Auto -> Clair -> Sombre
+      // 3. Sélecteur de thème (Clair par défaut -> Sombre au clic)
       const themeBtn = document.getElementById("theme-toggle");
       const themeLabel = document.getElementById("theme-label");
       const themeIcon = document.getElementById("theme-icon");
       const root = document.documentElement;
-      const modes = ["auto", "light", "dark"];
+      const modes = ["light", "dark"];
       let modeIndex = 0;
 
       function applyTheme(mode) {
-        if (mode === "auto") {
-          root.removeAttribute("data-theme");
-          themeLabel.textContent = "Thème : Auto";
-          themeIcon.textContent = "◐";
-        } else if (mode === "light") {
-          root.setAttribute("data-theme", "light");
-          themeLabel.textContent = "Thème : Clair";
-          themeIcon.textContent = "☀";
-        } else {
+        if (mode === "dark") {
           root.setAttribute("data-theme", "dark");
           themeLabel.textContent = "Thème : Sombre";
           themeIcon.textContent = "☾";
+        } else {
+          root.setAttribute("data-theme", "light");
+          themeLabel.textContent = "Thème : Clair";
+          themeIcon.textContent = "☀";
         }
       }
+
+      applyTheme("light");
 
       themeBtn.addEventListener("click", () => {
         modeIndex = (modeIndex + 1) % modes.length;
