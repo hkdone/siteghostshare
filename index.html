@@ -1,11 +1,13 @@
 <!doctype html>
 <html lang="fr" data-theme="light">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light dark" />
   <title>PhantomLink — Préparez, verrouillez et partagez vos fichiers sans cloud</title>
-  <meta name="description" content="PhantomLink (Android) : nettoyez vos photos et PDF (GPS, EXIF), masquez et filigranez vos pièces sensibles, stockez-les dans un coffre hors-ligne et transférez-les en direct sans compte ni cloud. Réception sur tout navigateur." />
+  <meta name="description"
+    content="PhantomLink (Android) : nettoyez vos photos, vidéos (MP4/MOV) et PDF (GPS, EXIF, auteur), masquez et filigranez vos pièces sensibles, stockez-les dans un coffre hors-ligne et transférez-les en direct sans compte ni cloud. Réception sur tout navigateur." />
   <style>
     @layer reset, base, components, utilities;
 
@@ -22,12 +24,44 @@
         }
       }
 
-      body, h1, h2, h3, h4, p, ul, ol, dl, dd, figure, blockquote, pre, table {
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      ul,
+      ol,
+      dl,
+      dd,
+      figure,
+      blockquote,
+      pre,
+      table {
         margin: 0;
       }
 
-      html, body, header, nav, main, section, article, aside, footer,
-      div, span, button, a, table, thead, tbody, tr, th, td, details, summary {
+      html,
+      body,
+      header,
+      nav,
+      main,
+      section,
+      article,
+      aside,
+      footer,
+      div,
+      span,
+      button,
+      a,
+      table,
+      thead,
+      tbody,
+      tr,
+      th,
+      td,
+      details,
+      summary {
         box-sizing: border-box;
       }
 
@@ -36,7 +70,8 @@
         color: inherit;
       }
 
-      img, svg {
+      img,
+      svg {
         display: block;
         max-inline-size: 100%;
       }
@@ -214,7 +249,10 @@
         border-radius: 5px;
       }
 
-      h1, h2, h3, h4 {
+      h1,
+      h2,
+      h3,
+      h4 {
         color: var(--ink);
         letter-spacing: -0.02em;
         line-height: 1.2;
@@ -222,6 +260,7 @@
     }
 
     @layer components {
+
       /* Lien d'évitement accessibilité */
       .skip-link {
         position: absolute;
@@ -342,6 +381,7 @@
       }
 
       @media (pointer: coarse) {
+
         .tab-btn,
         .btn,
         .theme-btn,
@@ -852,7 +892,7 @@
         margin-block-start: auto;
       }
 
-      .more-box > summary {
+      .more-box>summary {
         list-style: none;
         cursor: pointer;
         display: inline-flex;
@@ -869,34 +909,34 @@
         transition: background-color 0.14s ease, border-color 0.14s ease;
       }
 
-      .more-box > summary::-webkit-details-marker {
+      .more-box>summary::-webkit-details-marker {
         display: none;
       }
 
-      .more-box > summary:hover {
+      .more-box>summary:hover {
         border-color: var(--brand);
         background: var(--brand-tint);
       }
 
-      .more-box > summary .chev {
+      .more-box>summary .chev {
         display: inline-block;
         transition: transform 0.16s ease;
         font-style: normal;
       }
 
-      .more-box[open] > summary .chev {
+      .more-box[open]>summary .chev {
         transform: rotate(90deg);
       }
 
-      .more-box > summary .label-open {
+      .more-box>summary .label-open {
         display: none;
       }
 
-      .more-box[open] > summary .label-closed {
+      .more-box[open]>summary .label-closed {
         display: none;
       }
 
-      .more-box[open] > summary .label-open {
+      .more-box[open]>summary .label-open {
         display: inline;
       }
 
@@ -910,7 +950,7 @@
         margin-block-start: 18px;
       }
 
-      .more-box-section > summary {
+      .more-box-section>summary {
         background: var(--surface);
         box-shadow: var(--shadow-sm);
       }
@@ -1191,7 +1231,7 @@
         text-align: start;
       }
 
-      @container (width >= 640px) {
+      @container (width >=640px) {
         table.data-table tbody th[scope="row"] {
           position: sticky;
           inset-inline-start: 0;
@@ -1247,18 +1287,45 @@
           color: var(--ink-subtle);
         }
 
-        .table-plans td:nth-child(2)::before { content: var(--p-col2) " :"; }
-        .table-plans td:nth-child(3)::before { content: var(--p-col3) " :"; }
+        .table-plans td:nth-child(2)::before {
+          content: var(--p-col2) " :";
+        }
 
-        .table-compare td:nth-child(2)::before { content: var(--c-col2) " :"; }
-        .table-compare td:nth-child(3)::before { content: var(--c-col3) " :"; }
-        .table-compare td:nth-child(4)::before { content: var(--c-col4) " :"; }
-        .table-compare td:nth-child(5)::before { content: var(--c-col5) " :"; }
-        .table-compare td:nth-child(6)::before { content: var(--c-col6) " :"; }
+        .table-plans td:nth-child(3)::before {
+          content: var(--p-col3) " :";
+        }
 
-        .table-thirdparty td:nth-child(2)::before { content: var(--t-col2) " :"; }
-        .table-thirdparty td:nth-child(3)::before { content: var(--t-col3) " :"; }
-        .table-thirdparty td:nth-child(4)::before { content: var(--t-col4) " :"; }
+        .table-compare td:nth-child(2)::before {
+          content: var(--c-col2) " :";
+        }
+
+        .table-compare td:nth-child(3)::before {
+          content: var(--c-col3) " :";
+        }
+
+        .table-compare td:nth-child(4)::before {
+          content: var(--c-col4) " :";
+        }
+
+        .table-compare td:nth-child(5)::before {
+          content: var(--c-col5) " :";
+        }
+
+        .table-compare td:nth-child(6)::before {
+          content: var(--c-col6) " :";
+        }
+
+        .table-thirdparty td:nth-child(2)::before {
+          content: var(--t-col2) " :";
+        }
+
+        .table-thirdparty td:nth-child(3)::before {
+          content: var(--t-col3) " :";
+        }
+
+        .table-thirdparty td:nth-child(4)::before {
+          content: var(--t-col4) " :";
+        }
       }
 
       .table-plans {
@@ -1268,10 +1335,10 @@
 
       .table-compare {
         --c-col2: "PhantomLink";
-        --c-col3: "Signal";
-        --c-col4: "WhatsApp";
-        --c-col5: "WeTransfer / SwissTransfer";
-        --c-col6: "LocalSend";
+        --c-col3: "Messagerie E2EE";
+        --c-col4: "Messagerie classique";
+        --c-col5: "Transferts cloud";
+        --c-col6: "Partage Wi-Fi local";
       }
 
       .table-thirdparty {
@@ -1549,6 +1616,7 @@
           opacity: 0.35;
           transform: translateY(18px);
         }
+
         to {
           opacity: 1;
           transform: translateY(0);
@@ -1580,6 +1648,7 @@
     }
   </style>
 </head>
+
 <body>
   <a class="skip-link" href="#main-content">Aller au contenu principal</a>
 
@@ -1587,9 +1656,10 @@
     <div class="container header-inner">
       <a class="brand-lockup" href="#top" id="brand-home">
         <span class="brand-mark" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            <path d="M9 12l2 2 4-4"/>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M9 12l2 2 4-4" />
           </svg>
         </span>
         <span>PhantomLink</span>
@@ -1598,42 +1668,32 @@
 
       <div class="header-actions">
         <div class="primary-tabs" role="tablist" aria-label="Navigation principale" focusgroup="tablist nomemory">
-          <button
-            type="button"
-            role="tab"
-            class="tab-btn"
-            id="tab-showcase"
-            aria-selected="true"
-            aria-controls="panel-showcase"
-            focusgroupstart
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="3" y="3" width="7" height="7" rx="1.5"/>
-              <rect x="14" y="3" width="7" height="7" rx="1.5"/>
-              <rect x="3" y="14" width="7" height="7" rx="1.5"/>
-              <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+          <button type="button" role="tab" class="tab-btn" id="tab-showcase" aria-selected="true"
+            aria-controls="panel-showcase" focusgroupstart>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
             </svg>
             Découvrir l'application
           </button>
-          <button
-            type="button"
-            role="tab"
-            class="tab-btn"
-            id="tab-privacy"
-            aria-selected="false"
-            aria-controls="panel-privacy"
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <polyline points="14 2 14 8 20 8"/>
-              <line x1="16" y1="13" x2="8" y2="13"/>
-              <line x1="16" y1="17" x2="8" y2="17"/>
+          <button type="button" role="tab" class="tab-btn" id="tab-privacy" aria-selected="false"
+            aria-controls="panel-privacy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
             </svg>
             Confidentialité &amp; Mentions légales
           </button>
         </div>
 
-        <button type="button" class="theme-btn" id="theme-toggle" aria-label="Basculer entre le thème clair et le thème sombre">
+        <button type="button" class="theme-btn" id="theme-toggle"
+          aria-label="Basculer entre le thème clair et le thème sombre">
           <span aria-hidden="true" id="theme-icon">☀</span>
           <span id="theme-label">Thème : Clair</span>
         </button>
@@ -1655,7 +1715,8 @@
                 <div class="availability-banner">
                   <span class="android-dot">
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.61.61 0 0 0-.83-.22c-.3.16-.42.54-.26.85l1.84 3.18C3.58 11.01 1.66 13.84 1.38 17.2h21.24c-.28-3.36-2.2-6.19-5.02-7.72zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                      <path
+                        d="M17.6 9.48l1.84-3.18c.16-.31.04-.69-.26-.85-.29-.15-.65-.06-.83.22l-1.88 3.24a11.46 11.46 0 0 0-8.94 0L5.65 5.67a.61.61 0 0 0-.83-.22c-.3.16-.42.54-.26.85l1.84 3.18C3.58 11.01 1.66 13.84 1.38 17.2h21.24c-.28-3.36-2.2-6.19-5.02-7.72zM8.5 14.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm7 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
                     </svg>
                     Disponible sur Android
                   </span>
@@ -1668,26 +1729,45 @@
                 </h1>
 
                 <p class="hero-lead">
-                  Effacez les traces de vos photos et PDF, mettez vos papiers à l'abri hors-ligne et partagez-les directement d'un appareil à l'autre, sans compte.
+                  Effacez les traces cachées de vos photos, vidéos (<code>MP4</code>/<code>MOV</code>) et PDF, mettez
+                  vos papiers à l'abri hors-ligne et partagez-les directement d'un appareil à l'autre, sans compte.
                 </p>
 
                 <div class="hero-ctas">
-                  <a class="btn btn-primary" href="#piliers">Découvrir les 4 pouvoirs</a>
+                  <a class="btn btn-primary"
+                    href="https://play.google.com/store/apps/details?id=com.ghostshare.app&amp;pcampaignid=web_share"
+                    target="_blank" rel="noopener noreferrer">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M3.61 1.814L13.793 12 3.61 22.186a1.75 1.75 0 0 1-.61-1.345V3.159c0-.525.228-1.016.61-1.345zm1.404-.696l11.49 6.53-2.615 2.615L5.014 1.118zm12.828 7.29l3.18 1.808c.95.54.95 1.928 0 2.468l-3.18 1.808-2.905-2.905 2.905-3.179zm-3.953 4.325l2.615 2.615-11.49 6.53 8.875-9.145z" />
+                    </svg>
+                    Télécharger sur Google Play
+                  </a>
+                  <a class="btn btn-secondary" href="#piliers">Découvrir les 4 pouvoirs</a>
                   <a class="btn btn-secondary" href="#quotas">Voir Gratuit &amp; Pro</a>
                   <button type="button" class="btn btn-secondary" data-open-tab="privacy">Confidentialité</button>
                 </div>
 
                 <ul class="hero-trust-strip" aria-label="Garanties clés">
                   <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                      aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
                     Sans compte
                   </li>
                   <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                      aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
                     Zéro serveur cloud
                   </li>
                   <li>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+                      aria-hidden="true">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
                     Marche même hors-ligne
                   </li>
                 </ul>
@@ -1698,8 +1778,10 @@
                 <div class="demo-header">
                   <span class="demo-title">Exemple : pièce d'identité</span>
                   <div class="proof-toggle" role="group" aria-label="Comparer l'état du fichier">
-                    <button type="button" class="proof-toggle-btn" id="btn-demo-before" aria-pressed="false">Avant</button>
-                    <button type="button" class="proof-toggle-btn" id="btn-demo-after" aria-pressed="true">Après</button>
+                    <button type="button" class="proof-toggle-btn" id="btn-demo-before"
+                      aria-pressed="false">Avant</button>
+                    <button type="button" class="proof-toggle-btn" id="btn-demo-after"
+                      aria-pressed="true">Après</button>
                   </div>
                 </div>
 
@@ -1721,7 +1803,7 @@
                       </div>
                       <div class="demo-row">
                         <span class="demo-row-label">Numéro sensible caché</span>
-                        <span class="demo-row-val demo-val-clean" id="demo-redact">Flouté irréversiblement</span>
+                        <span class="demo-row-val demo-val-clean" id="demo-redact">Masqué irréversiblement</span>
                       </div>
                       <div class="demo-row">
                         <span class="demo-row-label">Orientation photo</span>
@@ -1736,7 +1818,7 @@
                 </div>
 
                 <p class="demo-caption" id="demo-caption">
-                  Nettoyé localement sur Android, prêt pour PhantomLink, WhatsApp, Gmail ou Leboncoin.
+                  Nettoyé localement sur Android, prêt pour PhantomLink, votre messagerie, votre e-mail ou un site d'annonces.
                 </p>
               </aside>
             </div>
@@ -1746,16 +1828,27 @@
           <section class="platform-strip reveal" aria-label="Compatibilité actuelle">
             <div class="platform-item">
               <div class="platform-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
               </div>
               <div>
                 <h2>Android aujourd'hui (iOS en préparation)</h2>
-                <p>L'application tourne sur Android ; la version iPhone / iPad est en préparation.</p>
+                <p>L'application est disponible sur <a
+                    href="https://play.google.com/store/apps/details?id=com.ghostshare.app&amp;pcampaignid=web_share"
+                    target="_blank" rel="noopener noreferrer">Google Play pour Android</a> ; la version iPhone / iPad
+                  est en préparation.</p>
               </div>
             </div>
             <div class="platform-item">
               <div class="platform-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10" />
+                  <line x1="2" y1="12" x2="22" y2="12" />
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                </svg>
               </div>
               <div>
                 <h2>Rien à installer pour recevoir</h2>
@@ -1776,23 +1869,35 @@
               <article class="pillar-card">
                 <div class="pillar-top">
                   <div class="pillar-icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="m9 12 2 2 4-4" />
+                    </svg>
                   </div>
                   <div>
                     <div class="pillar-num">1 · Avant d'envoyer</div>
-                    <h3>Nettoyer, flouter &amp; filigraner</h3>
+                    <h3>Nettoyer, masquer &amp; filigraner</h3>
                   </div>
                 </div>
                 <p class="pillar-summary">
-                  Retirez l'adresse GPS de vos photos, masquez un numéro et ajoutez un filigrane anti-fraude sur vos PDF.
+                  Retirez GPS, modèle et traces cachées de vos photos, vidéos (<code>MP4</code>/<code>MOV</code>) et
+                  PDF, masquez un numéro et ajoutez un filigrane anti-fraude.
                 </p>
                 <details class="more-box">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span class="label-open">Réduire</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span
+                      class="label-open">Réduire</span></summary>
                   <div class="more-box-body">
                     <ul class="pillar-list">
-                      <li><strong>Suppression des traces :</strong> GPS, modèle de téléphone, heure et auteur PDF retirés, photos toujours droites, preuve Avant / Après.</li>
-                      <li><strong>Masquage irréversible :</strong> pinceau, flou, mosaïque ou émoji ; PDF aplatis sans texte récupérable dessous.</li>
-                      <li><strong>Filigrane &amp; dossier virtuel 24 h :</strong> texte répété (libre en Pro) et accès direct depuis WhatsApp, Gmail ou Leboncoin.</li>
+                      <li><strong>Suppression des traces (Photos, PDF &amp; Vidéos) :</strong> GPS (traduit en ville
+                        proche 100 % hors-ligne à l'audit), modèle de téléphone, date et auteur PDF retirés, vidéos
+                        <code>MP4</code>/<code>MOV</code>/<code>M4V</code> purgées sans ré-encodage ni perte de qualité,
+                        photos toujours droites et preuve Avant / Après.
+                      </li>
+                      <li><strong>Masquage irréversible (Photos &amp; PDF) :</strong> caviardage noir opaque, mosaïque
+                        décorrélée ou émojis sur fond opaque ; PDF aplatis sans texte ni calque récupérable dessous.
+                      </li>
+                      <li><strong>Filigrane &amp; dossier virtuel 24 h :</strong> texte répété (libre en Pro) et accès
+                        direct depuis votre messagerie, boîte mail ou appli d'annonces.</li>
                     </ul>
                   </div>
                 </details>
@@ -1802,7 +1907,11 @@
               <article class="pillar-card pillar-card-vault">
                 <div class="pillar-top">
                   <div class="pillar-icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="11" width="18" height="11" rx="2" />
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                      <circle cx="12" cy="16" r="1" />
+                    </svg>
                   </div>
                   <div>
                     <div class="pillar-num">2 · Hors-ligne chez vous</div>
@@ -1810,15 +1919,20 @@
                   </div>
                 </div>
                 <p class="pillar-summary">
-                  Gardez vos papiers vitaux chiffrés hors-ligne sous code PIN ou empreinte, avec sauvegarde <code>.plbak</code>.
+                  Gardez vos papiers vitaux chiffrés hors-ligne sous code PIN ou empreinte, avec sauvegarde
+                  <code>.plbak</code>.
                 </p>
                 <details class="more-box">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span class="label-open">Réduire</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span
+                      class="label-open">Réduire</span></summary>
                   <div class="more-box-body">
                     <ul class="pillar-list">
-                      <li><strong>100 % hors-ligne :</strong> passeport, carte vitale et codes restent sur votre téléphone.</li>
-                      <li><strong>Lien direct avec le Sas :</strong> nettoyez et filigranez une pièce coffrée juste avant envoi sans toucher à l'original.</li>
-                      <li><strong>Anti-curieux &amp; export <code>.plbak</code> :</strong> blocage temporaire après 3 mauvais codes sans perte, transfert facile vers un nouveau mobile.</li>
+                      <li><strong>100 % hors-ligne :</strong> passeport, carte vitale et codes restent sur votre
+                        téléphone.</li>
+                      <li><strong>Lien direct avec le Sas :</strong> nettoyez et filigranez une pièce coffrée juste
+                        avant envoi sans toucher à l'original.</li>
+                      <li><strong>Anti-curieux &amp; export <code>.plbak</code> :</strong> blocage temporaire après 3
+                        mauvais codes sans perte, transfert facile vers un nouveau mobile.</li>
                     </ul>
                   </div>
                 </details>
@@ -1828,7 +1942,10 @@
               <article class="pillar-card">
                 <div class="pillar-top">
                   <div class="pillar-icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4Z"/></svg>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 2 11 13" />
+                      <path d="m22 2-7 20-4-9-9-4Z" />
+                    </svg>
                   </div>
                   <div>
                     <div class="pillar-num">3 · Transferts directs</div>
@@ -1836,15 +1953,20 @@
                   </div>
                 </div>
                 <p class="pillar-summary">
-                  Transférez d'un appareil à l'autre par Wi-Fi, sans box ni Internet, ou à distance — sans créer de compte.
+                  Transférez d'un appareil à l'autre par Wi-Fi, sans box ni Internet, ou à distance — sans créer de
+                  compte.
                 </p>
                 <details class="more-box">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span class="label-open">Réduire</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span
+                      class="label-open">Réduire</span></summary>
                   <div class="more-box-body">
                     <ul class="pillar-list">
-                      <li><strong>3 modes réseau :</strong> Wi-Fi local, Wi-Fi autonome créé par le mobile (sans box) ou Internet P2P jusqu'à 100 Go (PC/App en Pro).</li>
-                      <li><strong>Sécurisé &amp; pratique :</strong> lien ou QR code + PIN à 4 chiffres, partage depuis la galerie, aperçu photo et refus fichier par fichier.</li>
-                      <li><strong>Diffusion &amp; Demandes (Pro) :</strong> jusqu'à 100 téléchargements ou lien de dépôt pour recevoir des pièces chez vous.</li>
+                      <li><strong>3 modes réseau :</strong> Wi-Fi local, Wi-Fi autonome créé par le mobile (sans box) ou
+                        Internet P2P jusqu'à 100 Go (PC/App en Pro).</li>
+                      <li><strong>Sécurisé &amp; pratique :</strong> lien ou QR code + PIN à 4 chiffres, partage depuis
+                        la galerie, aperçu photo et refus fichier par fichier.</li>
+                      <li><strong>Diffusion &amp; Demandes (Pro) :</strong> jusqu'à 100 téléchargements ou lien de dépôt
+                        pour recevoir des pièces chez vous.</li>
                     </ul>
                   </div>
                 </details>
@@ -1854,7 +1976,12 @@
               <article class="pillar-card">
                 <div class="pillar-top">
                   <div class="pillar-icon" aria-hidden="true">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01"/><path d="M12 10h.01"/><path d="M16 10h.01"/></svg>
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                      <path d="M8 10h.01" />
+                      <path d="M12 10h.01" />
+                      <path d="M16 10h.01" />
+                    </svg>
                   </div>
                   <div>
                     <div class="pillar-num">4 · En direct</div>
@@ -1862,16 +1989,22 @@
                   </div>
                 </div>
                 <p class="pillar-summary">
-                  Discutez sans historique, parlez en talkie-walkie et joignez vos proches à distance par simple QR code.
+                  Discutez sans historique, parlez en talkie-walkie et joignez vos proches à distance par simple QR
+                  code.
                 </p>
                 <details class="more-box">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span class="label-open">Réduire</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span
+                      class="label-open">Réduire</span></summary>
                   <div class="more-box-body">
                     <ul class="pillar-list">
-                      <li><strong>Chat éphémère :</strong> aucune trace gardée ; le bouton « Brûler le fil » efface tout immédiatement des deux écrans.</li>
-                      <li><strong>Talkie-walkie vocal :</strong> échangez en direct à la voix pendant votre transfert.</li>
-                      <li><strong>Contacts Favoris sans annuaire :</strong> scannez un QR code face à face pour réveiller et joindre votre proche plus tard sans numéro ni e-mail.</li>
-                      <li><strong>Bonus pratiques :</strong> presse-papiers temps réel, point de rendez-vous, salle d'attente (Pro) et carte de visite vCard.</li>
+                      <li><strong>Chat éphémère :</strong> aucune trace gardée ; le bouton « Brûler le fil » efface tout
+                        immédiatement des deux écrans.</li>
+                      <li><strong>Talkie-walkie vocal :</strong> échangez en direct à la voix pendant votre transfert.
+                      </li>
+                      <li><strong>Contacts Favoris sans annuaire :</strong> scannez un QR code face à face pour
+                        réveiller et joindre votre proche plus tard sans numéro ni e-mail.</li>
+                      <li><strong>Bonus pratiques :</strong> presse-papiers temps réel, point de rendez-vous, salle
+                        d'attente (Pro) et carte de visite vCard.</li>
                     </ul>
                   </div>
                 </details>
@@ -1887,72 +2020,97 @@
             </div>
 
             <div class="scenario-shell">
-              <div class="scenario-tablist" role="tablist" aria-label="Exemples d'utilisation" focusgroup="tablist nomemory">
-                <button type="button" role="tab" class="scenario-tab" id="sc-tab-1" aria-selected="true" aria-controls="sc-panel-1" focusgroupstart>
+              <div class="scenario-tablist" role="tablist" aria-label="Exemples d'utilisation"
+                focusgroup="tablist nomemory">
+                <button type="button" role="tab" class="scenario-tab" id="sc-tab-1" aria-selected="true"
+                  aria-controls="sc-panel-1" focusgroupstart>
                   🏠 Dossier locatif
                 </button>
-                <button type="button" role="tab" class="scenario-tab" id="sc-tab-2" aria-selected="false" aria-controls="sc-panel-2">
-                  🛒 Leboncoin / Vinted
+                <button type="button" role="tab" class="scenario-tab" id="sc-tab-2" aria-selected="false"
+                  aria-controls="sc-panel-2">
+                  🛒 Petites annonces
                 </button>
-                <button type="button" role="tab" class="scenario-tab" id="sc-tab-3" aria-selected="false" aria-controls="sc-panel-3">
+                <button type="button" role="tab" class="scenario-tab" id="sc-tab-3" aria-selected="false"
+                  aria-controls="sc-panel-3">
                   📦 Gros dossier
                 </button>
-                <button type="button" role="tab" class="scenario-tab" id="sc-tab-4" aria-selected="false" aria-controls="sc-panel-4">
+                <button type="button" role="tab" class="scenario-tab" id="sc-tab-4" aria-selected="false"
+                  aria-controls="sc-panel-4">
                   🧳 Voyage &amp; mobile
                 </button>
               </div>
 
               <div id="sc-panel-1" role="tabpanel" aria-labelledby="sc-tab-1">
-                <p class="pillar-summary"><strong>Dossier location protégé :</strong> floutez les numéros inutiles, ajoutez un filigrane « Dossier locatif » et envoyez sans laisser de copie sur un cloud.</p>
+                <p class="pillar-summary"><strong>Dossier location protégé :</strong> floutez les numéros inutiles,
+                  ajoutez un filigrane « Dossier locatif » et envoyez sans laisser de copie sur un cloud.</p>
                 <details class="more-box more-box-section">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3 étapes</span><span class="label-open">Masquer</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3
+                      étapes</span><span class="label-open">Masquer</span></summary>
                   <div class="more-box-body">
                     <ol class="scenario-steps">
-                      <li><span class="step-num">1</span><span>Importez CNI et justificatifs dans le Sas PhantomLink.</span></li>
-                      <li><span class="step-num">2</span><span>Masquez au doigt, filigranez et aplatissez le PDF.</span></li>
-                      <li><span class="step-num">3</span><span>Envoyez par lien avec PIN 4 chiffres (ou directement dans Gmail).</span></li>
+                      <li><span class="step-num">1</span><span>Importez CNI et justificatifs dans le Sas
+                          PhantomLink.</span></li>
+                      <li><span class="step-num">2</span><span>Masquez au doigt, filigranez et aplatissez le PDF.</span>
+                      </li>
+                      <li><span class="step-num">3</span><span>Envoyez par lien avec PIN 4 chiffres (ou directement par
+                          e-mail).</span></li>
                     </ol>
                   </div>
                 </details>
               </div>
 
               <div id="sc-panel-2" role="tabpanel" aria-labelledby="sc-tab-2" hidden="until-found">
-                <p class="pillar-summary"><strong>Annonces sans fuite d'adresse :</strong> la position GPS de votre maison et le modèle de votre mobile sont retirés avant publication.</p>
+                <p class="pillar-summary"><strong>Annonces sans fuite d'adresse :</strong> la position GPS de votre
+                  maison et le modèle de votre mobile sont retirés avant publication.</p>
                 <details class="more-box more-box-section">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3 étapes</span><span class="label-open">Masquer</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3
+                      étapes</span><span class="label-open">Masquer</span></summary>
                   <div class="more-box-body">
                     <ol class="scenario-steps">
                       <li><span class="step-num">1</span><span>Ouvrez la photo de l'objet dans PhantomLink.</span></li>
-                      <li><span class="step-num">2</span><span>GPS et métadonnées disparaissent ; floutez une plaque ou un reflet si besoin.</span></li>
-                      <li><span class="step-num">3</span><span>Piochez l'image propre depuis Leboncoin ou Vinted (purgée auto en 24 h).</span></li>
+                      <li><span class="step-num">2</span><span>GPS et métadonnées disparaissent ; floutez une plaque ou
+                          un reflet si besoin.</span></li>
+                      <li><span class="step-num">3</span><span>Piochez l'image propre depuis votre appli de petites annonces (purgée
+                          auto en 24 h).</span></li>
                     </ol>
                   </div>
                 </details>
               </div>
 
               <div id="sc-panel-3" role="tabpanel" aria-labelledby="sc-tab-3" hidden="until-found">
-                <p class="pillar-summary"><strong>Vidéos et gros dossiers :</strong> envoyez en qualité originale jusqu'à 100 Go (PC/App en Pro) directement vers un navigateur sans rien installer.</p>
+                <p class="pillar-summary"><strong>Vidéos et gros dossiers :</strong> envoyez en qualité originale
+                  jusqu'à 100 Go (PC/App en Pro) directement vers un navigateur sans rien installer.</p>
                 <details class="more-box more-box-section">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3 étapes</span><span class="label-open">Masquer</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3
+                      étapes</span><span class="label-open">Masquer</span></summary>
                   <div class="more-box-body">
                     <ol class="scenario-steps">
-                      <li><span class="step-num">1</span><span>Partagez vos fichiers vers PhantomLink depuis votre galerie.</span></li>
-                      <li><span class="step-num">2</span><span>Choisissez Wi-Fi local (500 Mo gratuit), Wi-Fi autonome ou Internet P2P (Pro).</span></li>
-                      <li><span class="step-num">3</span><span>Votre contact scanne le QR code ou ouvre le lien dans son navigateur.</span></li>
+                      <li><span class="step-num">1</span><span>Partagez vos fichiers vers PhantomLink depuis votre
+                          galerie.</span></li>
+                      <li><span class="step-num">2</span><span>Choisissez Wi-Fi local (500 Mo gratuit), Wi-Fi autonome
+                          ou Internet P2P (Pro).</span></li>
+                      <li><span class="step-num">3</span><span>Votre contact scanne le QR code ou ouvre le lien dans son
+                          navigateur.</span></li>
                     </ol>
                   </div>
                 </details>
               </div>
 
               <div id="sc-panel-4" role="tabpanel" aria-labelledby="sc-tab-4" hidden="until-found">
-                <p class="pillar-summary"><strong>Papiers vitaux &amp; changement de téléphone :</strong> gardez passeport et codes hors-ligne dans votre coffre et exportez tout en un fichier <code>.plbak</code>.</p>
+                <p class="pillar-summary"><strong>Papiers vitaux &amp; changement de téléphone :</strong> gardez
+                  passeport et codes hors-ligne dans votre coffre et exportez tout en un fichier <code>.plbak</code>.
+                </p>
                 <details class="more-box more-box-section">
-                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3 étapes</span><span class="label-open">Masquer</span></summary>
+                  <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir les 3
+                      étapes</span><span class="label-open">Masquer</span></summary>
                   <div class="more-box-body">
                     <ol class="scenario-steps">
-                      <li><span class="step-num">1</span><span>Rangez vos pièces importantes dans le Coffre PhantomLock.</span></li>
-                      <li><span class="step-num">2</span><span>Sortez-en une copie vers le Sas pour la filigraner si un hôtel vous la demande.</span></li>
-                      <li><span class="step-num">3</span><span>Exportez votre sauvegarde chiffrée <code>.plbak</code> pour restaurer sur un autre Android.</span></li>
+                      <li><span class="step-num">1</span><span>Rangez vos pièces importantes dans le Coffre
+                          PhantomLock.</span></li>
+                      <li><span class="step-num">2</span><span>Sortez-en une copie vers le Sas pour la filigraner si un
+                          hôtel vous la demande.</span></li>
+                      <li><span class="step-num">3</span><span>Exportez votre sauvegarde chiffrée <code>.plbak</code>
+                          pour restaurer sur un autre Android.</span></li>
                     </ol>
                   </div>
                 </details>
@@ -1971,17 +2129,17 @@
               <article class="plan-card">
                 <h3><span>Gratuit</span><span class="chip">0 € · Sans compte</span></h3>
                 <ul class="plan-highlights">
-                  <li>3 fichiers / jour au Sas + dossier 24 h</li>
+                  <li>Audit métadonnées illimité (photos, PDF &amp; vidéos)</li>
+                  <li>3 photos/PDF par jour + 1 purge vidéo par mois</li>
                   <li>Wi-Fi local &amp; autonome jusqu'à 500 Mo</li>
-                  <li>1 coffre (3 fichiers) + export <code>.plbak</code></li>
-                  <li>Réception gratuite de tout contact Pro</li>
+                  <li>1 coffre (3 fichiers) + export <code>.plbak</code> + réception Pro</li>
                 </ul>
               </article>
 
               <article class="plan-card plan-card-pro">
                 <h3><span>PhantomLink Pro</span><span class="chip">Via Google Play</span></h3>
                 <ul class="plan-highlights">
-                  <li>Sas &amp; filigrane libre illimités</li>
+                  <li>Sas Photos, PDF, Vidéos (<code>MP4</code>/<code>MOV</code>) &amp; filigrane libre illimités</li>
                   <li>Transferts Internet P2P jusqu'à 100 Go*</li>
                   <li>Coffre 200 fichiers / 4 Go + Demandes de dépôt</li>
                   <li>Appels Favoris, Diffusion 100x &amp; Salle d'attente</li>
@@ -1990,11 +2148,13 @@
             </div>
 
             <details class="more-box more-box-section">
-              <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir le tableau complet des quotas</span><span class="label-open">Masquer le tableau</span></summary>
+              <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Voir le tableau complet des
+                  quotas</span><span class="label-open">Masquer le tableau</span></summary>
               <div class="more-box-body">
                 <div class="table-wrap" tabindex="0" role="region" aria-labelledby="caption-plans">
                   <table class="data-table table-plans">
-                    <caption id="caption-plans">Comparatif détaillé entre PhantomLink Gratuit et PhantomLink Pro</caption>
+                    <caption id="caption-plans">Comparatif détaillé entre PhantomLink Gratuit et PhantomLink Pro
+                    </caption>
                     <thead>
                       <tr>
                         <th scope="col">Usage</th>
@@ -2004,14 +2164,20 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Sas de nettoyage, floutage &amp; filigrane</th>
-                        <td><strong>3 fichiers / jour</strong> (filigrane avec signature PhantomLink) + disque virtuel 24 h</td>
-                        <td><span class="tag-yes">Illimité</span> · Filigrane 100 % personnalisé sans mention (texte, opacité, densité)</td>
+                        <th scope="row">Sas de nettoyage (Photos, PDF &amp; Vidéos), masquage &amp; filigrane</th>
+                        <td>Audit Avant/Après <strong>illimité</strong> · <strong>3 photos/PDF par jour</strong> +
+                          <strong>1 purge vidéo (MP4/MOV) par mois</strong> (filigrane signé PhantomLink) + disque
+                          virtuel 24 h
+                        </td>
+                        <td><span class="tag-yes">Illimité</span> · Purges vidéo sans ré-encodage · Filigrane 100 %
+                          personnalisé sans mention (texte, opacité, densité)</td>
                       </tr>
                       <tr>
                         <th scope="row">Transferts en Wi-Fi local &amp; Wi-Fi autonome</th>
-                        <td>Jusqu'à <strong>500 Mo / fichier</strong> · 1 téléchargement · 20 min max · PIN 4 chiffres</td>
-                        <td><span class="tag-yes">Illimité</span> · Durée prolongée · Diffusion multi-destinataires (jusqu'à 100 téléchargements)</td>
+                        <td>Jusqu'à <strong>500 Mo / fichier</strong> · 1 téléchargement · 20 min max · PIN 4 chiffres
+                        </td>
+                        <td><span class="tag-yes">Illimité</span> · Durée prolongée · Diffusion multi-destinataires
+                          (jusqu'à 100 téléchargements)</td>
                       </tr>
                       <tr>
                         <th scope="row">Transferts à distance par Internet (P2P)</th>
@@ -2020,29 +2186,36 @@
                       </tr>
                       <tr>
                         <th scope="row">Coffre-fort hors-ligne &amp; sauvegarde .plbak</th>
-                        <td>1 coffre · <strong>3 fichiers / 80 Mo max</strong> · Export/import <code>.plbak</code> inclus</td>
-                        <td><span class="tag-yes">Jusqu'à 200 fichiers / 4 Go</span> · Export/import <code>.plbak</code> inclus</td>
+                        <td>1 coffre · <strong>3 fichiers / 80 Mo max</strong> · Export/import <code>.plbak</code>
+                          inclus</td>
+                        <td><span class="tag-yes">Jusqu'à 200 fichiers / 4 Go</span> · Export/import <code>.plbak</code>
+                          inclus</td>
                       </tr>
                       <tr>
                         <th scope="row">Demande de fichiers / secrets &amp; Salle d'attente</th>
                         <td><span class="tag-no">Pro uniquement</span></td>
-                        <td><span class="tag-yes">Inclus</span> · Lien de dépôt vers votre mobile + validation manuelle des arrivants</td>
+                        <td><span class="tag-yes">Inclus</span> · Lien de dépôt vers votre mobile + validation manuelle
+                          des arrivants</td>
                       </tr>
                       <tr>
                         <th scope="row">Chat éphémère &amp; Talkie-walkie vocal</th>
                         <td>Chat texte · Audio <strong>5 min en local</strong> · 1 carte vCard / jour</td>
-                        <td><span class="tag-yes">Toute la session en local &amp; sur Internet</span> · Pièces jointes chat 25 Mo · vCard illimitées</td>
+                        <td><span class="tag-yes">Toute la session en local &amp; sur Internet</span> · Pièces jointes
+                          chat 25 Mo · vCard illimitées</td>
                       </tr>
                       <tr>
                         <th scope="row">Contacts Favoris (réveil à distance)</th>
                         <td>Réception &amp; réponse <span class="tag-yes">Gratuit</span> (ajout QR inclus)</td>
-                        <td><span class="tag-yes">Appels &amp; envois sortants illimités</span> vers vos contacts appairés</td>
+                        <td><span class="tag-yes">Appels &amp; envois sortants illimités</span> vers vos contacts
+                          appairés</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <p class="table-note">
-                  * Limite technique du navigateur mobile : vers Chrome/Safari sur smartphone, le plafond est de <strong>512 Mo</strong> pour préserver la mémoire du navigateur. Vers un PC/Mac ou entre applis Android, la limite atteint <strong>100 Go</strong>.
+                  * Limite technique du navigateur mobile : vers Chrome/Safari sur smartphone, le plafond est de
+                  <strong>512 Mo</strong> pour préserver la mémoire du navigateur. Vers un PC/Mac ou entre applis
+                  Android, la limite atteint <strong>100 Go</strong>.
                 </p>
               </div>
             </details>
@@ -2052,26 +2225,27 @@
           <section class="section reveal" id="comparatif" aria-labelledby="compare-title">
             <div class="section-head">
               <span class="section-eyebrow">En un coup d'œil</span>
-              <h2 id="compare-title">Pourquoi pas juste WhatsApp ou WeTransfer ?</h2>
+              <h2 id="compare-title">Pourquoi pas juste une messagerie ou un transfert cloud ?</h2>
             </div>
 
             <div class="compare-summary-grid">
               <article class="compare-mini-card">
-                <h3>Vs WeTransfer / Cloud</h3>
+                <h3>Vs Services de transfert cloud</h3>
                 <p>Zéro serveur de stockage et vos fichiers partent déjà nettoyés et filigranés.</p>
               </article>
               <article class="compare-mini-card">
-                <h3>Vs WhatsApp / Signal</h3>
+                <h3>Vs Messageries tierces</h3>
                 <p>Sans numéro de téléphone, zéro compression vidéo et coffre hors-ligne intégré.</p>
               </article>
               <article class="compare-mini-card">
-                <h3>Vs LocalSend</h3>
+                <h3>Vs Partage Wi-Fi classique</h3>
                 <p>Marche même sans box Wi-Fi, à distance sur Internet, avec protection des PDF.</p>
               </article>
             </div>
 
             <details class="more-box more-box-section">
-              <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Comparer ligne par ligne</span><span class="label-open">Masquer le comparatif</span></summary>
+              <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">Comparer ligne par
+                  ligne</span><span class="label-open">Masquer le comparatif</span></summary>
               <div class="more-box-body">
                 <div class="table-wrap" tabindex="0" role="region" aria-labelledby="caption-compare">
                   <table class="data-table table-compare">
@@ -2080,16 +2254,17 @@
                       <tr>
                         <th scope="col">Besoin au quotidien</th>
                         <th scope="col">PhantomLink</th>
-                        <th scope="col">Signal</th>
-                        <th scope="col">WhatsApp</th>
-                        <th scope="col">WeTransfer / SwissTransfer</th>
-                        <th scope="col">LocalSend</th>
+                        <th scope="col">Messagerie E2EE</th>
+                        <th scope="col">Messagerie classique</th>
+                        <th scope="col">Transferts cloud</th>
+                        <th scope="col">Partage Wi-Fi local</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Nettoie GPS, floute &amp; filigrane avant partage</th>
-                        <td><span class="tag-yes">Oui complet</span> (+ PDF aplati)</td>
+                        <th scope="row">Nettoie GPS (photos &amp; vidéos), masque &amp; filigrane avant partage</th>
+                        <td><span class="tag-yes">Oui complet</span> (Photos, PDF aplati &amp; Vidéos MP4/MOV sans
+                          ré-encodage)</td>
                         <td>Floutage simple</td>
                         <td><span class="tag-no">Non</span></td>
                         <td><span class="tag-no">Non</span></td>
@@ -2107,7 +2282,7 @@
                         <th scope="row">Transfert direct sans serveur cloud</th>
                         <td><span class="tag-yes">Oui (Wi-Fi &amp; P2P)</span></td>
                         <td><span class="tag-no">Relais serveur</span></td>
-                        <td><span class="tag-no">Serveurs Meta</span></td>
+                        <td><span class="tag-no">Serveurs tiers</span></td>
                         <td><span class="tag-no">Stocké en ligne</span></td>
                         <td><span class="tag-yes">Wi-Fi local</span></td>
                       </tr>
@@ -2150,25 +2325,31 @@
             </div>
 
             <div class="audit-grid">
-              <a class="audit-card" href="https://observatory.mozilla.org/analyze/ghostshare-signal.dkstudiodev86.workers.dev" target="_blank" rel="noopener noreferrer">
+              <a class="audit-card"
+                href="https://observatory.mozilla.org/analyze/ghostshare-signal.dkstudiodev86.workers.dev"
+                target="_blank" rel="noopener noreferrer">
                 <span class="audit-score">A+ · 155/100</span>
                 <span class="audit-name">Mozilla HTTP Observatory</span>
                 <span class="audit-link-label">Vérifier ↗</span>
               </a>
 
-              <a class="audit-card" href="https://securityheaders.com/?q=https%3A%2F%2Fghostshare-signal.dkstudiodev86.workers.dev%2F&amp;followRedirects=on" target="_blank" rel="noopener noreferrer">
+              <a class="audit-card"
+                href="https://securityheaders.com/?q=https%3A%2F%2Fghostshare-signal.dkstudiodev86.workers.dev%2F&amp;followRedirects=on"
+                target="_blank" rel="noopener noreferrer">
                 <span class="audit-score">Note A+</span>
                 <span class="audit-name">SecurityHeaders.com</span>
                 <span class="audit-link-label">Vérifier ↗</span>
               </a>
 
-              <a class="audit-card" href="https://www.immuniweb.com/websec/ghostshare-signal.dkstudiodev86.workers.dev/" target="_blank" rel="noopener noreferrer">
+              <a class="audit-card" href="https://www.immuniweb.com/websec/ghostshare-signal.dkstudiodev86.workers.dev/"
+                target="_blank" rel="noopener noreferrer">
                 <span class="audit-score">Grade A</span>
                 <span class="audit-name">ImmuniWeb SSL / WebSec</span>
                 <span class="audit-link-label">Vérifier ↗</span>
               </a>
 
-              <a class="audit-card" href="https://internet.nl/site/ghostshare-signal.dkstudiodev86.workers.dev/4359100/" target="_blank" rel="noopener noreferrer">
+              <a class="audit-card" href="https://internet.nl/site/ghostshare-signal.dkstudiodev86.workers.dev/4359100/"
+                target="_blank" rel="noopener noreferrer">
                 <span class="audit-score">75 % · Code 0</span>
                 <span class="audit-name">Internet.nl &amp; Scans code</span>
                 <span class="audit-link-label">Vérifier ↗</span>
@@ -2177,15 +2358,22 @@
 
             <div class="honesty-card">
               <h3>Limites assumées</h3>
-              <p class="pillar-summary">Android aujourd'hui (iOS en préparation), aucun audit payant de cabinet privé sur le code mobile, et adresses IP visibles entre les deux appareils lors d'un transfert direct.</p>
+              <p class="pillar-summary">Android aujourd'hui (iOS en préparation), aucun audit payant de cabinet privé
+                sur le code mobile, et adresses IP visibles entre les deux appareils lors d'un transfert direct.</p>
               <details class="more-box more-box-section">
-                <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span class="label-open">Réduire</span></summary>
+                <summary><i class="chev" aria-hidden="true">▸</i><span class="label-closed">En savoir plus</span><span
+                    class="label-open">Réduire</span></summary>
                 <div class="more-box-body">
                   <ul>
-                    <li><strong>Android aujourd'hui, iOS en préparation :</strong> iPhone/iPad reçoivent déjà vos fichiers dans leur navigateur.</li>
-                    <li><strong>Pas d'audit payant de cabinet privé sur le code mobile :</strong> les scores ci-dessus portent sur notre portail web et nos scans automatisés ; le code mobile n'a pas passé d'audit payant ANSSI/Quarkslab/Cure53.</li>
-                    <li><strong>Direct P2P = IP visible par votre correspondant :</strong> utilisez un VPN si vous devez masquer votre adresse réseau.</li>
-                    <li><strong>Après téléchargement :</strong> votre contact contrôle son fichier (d'où l'utilité du filigrane). Sur Wi-Fi public ouvert, préférez le Point d'accès autonome ou Internet P2P.</li>
+                    <li><strong>Android aujourd'hui, iOS en préparation :</strong> iPhone/iPad reçoivent déjà vos
+                      fichiers dans leur navigateur.</li>
+                    <li><strong>Pas d'audit payant de cabinet privé sur le code mobile :</strong> les scores ci-dessus
+                      portent sur notre portail web et nos scans automatisés ; le code mobile n'a pas passé d'audit
+                      payant ANSSI/Quarkslab/Cure53.</li>
+                    <li><strong>Direct P2P = IP visible par votre correspondant :</strong> utilisez un VPN si vous devez
+                      masquer votre adresse réseau.</li>
+                    <li><strong>Après téléchargement :</strong> votre contact contrôle son fichier (d'où l'utilité du
+                      filigrane). Sur Wi-Fi public ouvert, préférez le Point d'accès autonome ou Internet P2P.</li>
                   </ul>
                 </div>
               </details>
@@ -2201,15 +2389,18 @@
             <div class="faq-list">
               <details class="faq-item">
                 <summary>Mon correspondant doit-il installer quelque chose sur iPhone ou PC ?</summary>
-                <p>Non : il clique simplement sur votre lien (ou scanne le QR code) dans Safari, Chrome, Edge ou Firefox.</p>
+                <p>Non : il clique simplement sur votre lien (ou scanne le QR code) dans Safari, Chrome, Edge ou
+                  Firefox.</p>
               </details>
               <details class="faq-item">
                 <summary>Mes fichiers passent-ils par vos serveurs ?</summary>
-                <p>Non : le nettoyage, le coffre et vos sauvegardes restent 100 % sur votre téléphone, et les transferts circulent directement entre appareils.</p>
+                <p>Non : le nettoyage, le coffre et vos sauvegardes restent 100 % sur votre téléphone, et les transferts
+                  circulent directement entre appareils.</p>
               </details>
               <details class="faq-item">
                 <summary>Que faire si j'oublie le code PIN de mon coffre ?</summary>
-                <p>Par conception, personne (pas même l'éditeur) ne peut le réinitialiser : gardez précieusement votre mot de passe.</p>
+                <p>Par conception, personne (pas même l'éditeur) ne peut le réinitialiser : gardez précieusement votre
+                  mot de passe.</p>
               </details>
             </div>
           </section>
@@ -2226,53 +2417,83 @@
           <div class="legal-header">
             <h1>Politique de Confidentialité &amp; Mentions Légales</h1>
             <p class="legal-meta">
-              Application : <strong>PhantomLink (GhostMesh)</strong> · Éditeur : Jean Virassa (DK Studio)<br />
-              Contact : <a href="mailto:contact@dkstudio.dev">contact@dkstudio.dev</a> · Dernière mise à jour : 11 novembre 2026
+              Application : <strong>PhantomLink</strong> · Éditeur : Jean Virassa (DK Studio)<br />
+              Contact : <a href="mailto:contact@dkstudio.dev">contact@dkstudio.dev</a> · Dernière mise à jour : 15
+              novembre 2026
             </p>
           </div>
 
           <div class="legal-card">
             <strong>Synthèse en langage clair.</strong>
-            PhantomLink est un outil logiciel technique décentralisé combinant le partage pair-à-pair (P2P direct), des coffres locaux chiffrés et un Sas de protection de la vie privée (purification des métadonnées, masquage et filigrane sans cloud).
-            <strong>Aucun fichier, document, secret, message ou flux audio ne transite par, ni n'est hébergé sur un serveur de stockage cloud appartenant à l'éditeur.</strong>
-            L'éditeur n'a aucun accès à vos données et ne tient aucun registre ou historique de vos échanges. Vous demeurez l'unique responsable du contenu que vous traitez, transférez ou recevez.
+            PhantomLink est un outil logiciel technique décentralisé combinant le partage pair-à-pair (P2P direct), des
+            coffres locaux chiffrés et un Sas de protection de la vie privée (purification des métadonnées, masquage et
+            filigrane sans cloud).
+            <strong>Aucun fichier, document, secret, message ou flux audio ne transite par, ni n'est hébergé sur un
+              serveur de stockage cloud appartenant à l'éditeur.</strong>
+            L'éditeur n'a aucun accès à vos données et ne tient aucun registre ou historique de vos échanges. Vous
+            demeurez l'unique responsable du contenu que vous traitez, transférez ou recevez.
           </div>
 
           <div class="legal-body">
             <h2>1. Statut Juridique d'Éditeur Logiciel (Pure Tool Provider)</h2>
-            <p>L'application PhantomLink est fournie en tant qu'outil logiciel technique neutre et décentralisé (disponible sur Android, avec réception compatible navigateur web).</p>
+            <p>L'application PhantomLink est fournie en tant qu'outil logiciel technique neutre et décentralisé
+              (disponible sur Android, avec réception compatible navigateur web).</p>
             <ul>
-              <li><strong>Absence totale d'hébergement :</strong> L'éditeur n'exploite aucun serveur d'hébergement, de stockage de fichiers ou de base de données de contenu. L'éditeur <strong>n'est pas un hébergeur de données</strong> au sens de l'article 6 de la Loi pour la Confiance dans l'Économie Numérique (LCEN) ni de la Directive e-Commerce européenne.</li>
-              <li><strong>Zéro contrôle éditorial :</strong> L'éditeur n'exerce aucun contrôle technique, a priori ou a posteriori, sur les données échangées entre pairs ou scellées dans les coffres de l'application.</li>
+              <li><strong>Absence totale d'hébergement :</strong> L'éditeur n'exploite aucun serveur d'hébergement, de
+                stockage de fichiers ou de base de données de contenu. L'éditeur <strong>n'est pas un hébergeur de
+                  données</strong> au sens de l'article 6 de la Loi pour la Confiance dans l'Économie Numérique (LCEN)
+                ni de la Directive e-Commerce européenne.</li>
+              <li><strong>Zéro contrôle éditorial :</strong> L'éditeur n'exerce aucun contrôle technique, a priori ou a
+                posteriori, sur les données échangées entre pairs ou scellées dans les coffres de l'application.</li>
             </ul>
 
             <h2>2. Clause de Non-Responsabilité &amp; Exonération de Garantie</h2>
-            <p>L'utilisateur final est le seul et unique responsable des contenus émis, demandés, reçus ou stockés via l'application :</p>
+            <p>L'utilisateur final est le seul et unique responsable des contenus émis, demandés, reçus ou stockés via
+              l'application :</p>
             <ul>
-              <li><strong>Licéité des contenus :</strong> L'utilisateur s'engage à respecter scrupuleusement les lois et réglementations en vigueur dans sa juridiction (droits de propriété intellectuelle, secret des affaires, respect de la vie privée, interdiction des contenus illicites).</li>
-              <li><strong>Innocuité &amp; Sécurité :</strong> L'éditeur décline toute responsabilité quant à l'exactitude, la légalité ou la dangerosité (virus, logiciels malveillants, malwares, rançongiciels) des fichiers reçus d'un tiers. L'utilisateur a la responsabilité exclusive de vérifier l'identité de son correspondant avant tout téléchargement ou exécution.</li>
-              <li><strong>Fourniture « En l'état » (Clause AS IS) :</strong> Le logiciel est fourni sans garantie d'aucune sorte, expresse ou implicite, quant à sa continuité de service, son adéquation à un besoin spécifique ou son invulnérabilité face à des compromissions matérielles du terminal récepteur. En aucun cas l'auteur ne pourra être tenu responsable de préjudices directs ou indirects, pertes de données ou litiges consécutifs à l'utilisation du logiciel.</li>
+              <li><strong>Licéité des contenus :</strong> L'utilisateur s'engage à respecter scrupuleusement les lois et
+                réglementations en vigueur dans sa juridiction (droits de propriété intellectuelle, secret des affaires,
+                respect de la vie privée, interdiction des contenus illicites).</li>
+              <li><strong>Innocuité &amp; Sécurité :</strong> L'éditeur décline toute responsabilité quant à
+                l'exactitude, la légalité ou la dangerosité (virus, logiciels malveillants, malwares, rançongiciels) des
+                fichiers reçus d'un tiers. L'utilisateur a la responsabilité exclusive de vérifier l'identité de son
+                correspondant avant tout téléchargement ou exécution.</li>
+              <li><strong>Fourniture « En l'état » (Clause AS IS) :</strong> Le logiciel est fourni sans garantie
+                d'aucune sorte, expresse ou implicite, quant à sa continuité de service, son adéquation à un besoin
+                spécifique ou son invulnérabilité face à des compromissions matérielles du terminal récepteur. En aucun
+                cas l'auteur ne pourra être tenu responsable de préjudices directs ou indirects, pertes de données ou
+                litiges consécutifs à l'utilisation du logiciel.</li>
             </ul>
 
             <div class="legal-warning">
               <strong>Transparence sur l'absence d'audit de sécurité indépendant certifié :</strong><br />
-              Le logiciel mobile PhantomLink <strong>n'a pas fait l'objet d'un audit de sécurité payant ni d'une certification formelle par un organisme d'État (type ANSSI) ou un cabinet d'audit spécialisé (type Quarkslab, Cure53, Synacktiv)</strong>. Les garanties énoncées reposent sur la conception interne de l'éditeur, l'application de primitives cryptographiques reconnues (AES-256-GCM, WebRTC DTLS) et les vérifications publiques automatisées du portail de signalisation. Les utilisateurs traitant des données hautement sensibles ou classifiées sont invités à conduire leur propre évaluation de risque avant usage.
+              Le logiciel mobile PhantomLink <strong>n'a pas fait l'objet d'un audit de sécurité payant ni d'une
+                certification formelle par un organisme d'État (type ANSSI) ou un cabinet d'audit spécialisé (type
+                Quarkslab, Cure53, Synacktiv)</strong>. Les garanties énoncées reposent sur la conception interne de
+              l'éditeur, l'application de primitives cryptographiques reconnues (AES-256-GCM, WebRTC DTLS) et les
+              vérifications publiques automatisées du portail de signalisation. Les utilisateurs traitant des données
+              hautement sensibles ou classifiées sont invités à conduire leur propre évaluation de risque avant usage.
             </div>
 
             <h2>3. Absence Totale de Journalisation (No-Logs Policy)</h2>
             <p>L'éditeur applique une politique stricte de zéro donnée personnelle :</p>
             <ul>
-              <li><strong>Zéro collecte d'identité :</strong> Aucun nom, aucune adresse e-mail ni aucun numéro de téléphone n'est exigé pour faire fonctionner l'application.</li>
-              <li><strong>Zéro historique :</strong> L'éditeur ne conserve, ne vend et ne monétise aucun log de transfert, aucun journal de session et aucun historique de messages.</li>
-              <li><strong>Purge volatile :</strong> Les tampons de mémoire vive (RAM) sont libérés et réécriturés dès la clôture de la session sur l'appareil.</li>
+              <li><strong>Zéro collecte d'identité :</strong> Aucun nom, aucune adresse e-mail ni aucun numéro de
+                téléphone n'est exigé pour faire fonctionner l'application.</li>
+              <li><strong>Zéro historique :</strong> L'éditeur ne conserve, ne vend et ne monétise aucun log de
+                transfert, aucun journal de session et aucun historique de messages.</li>
+              <li><strong>Purge volatile :</strong> Les tampons de mémoire vive (RAM) sont libérés et réécriturés dès la
+                clôture de la session sur l'appareil.</li>
             </ul>
 
             <h2>4. Rôle des Services Tiers d'Infrastructure</h2>
-            <p>Pour permettre l'interconnexion P2P directe et les notifications sans créer de compte central, l'application s'appuie sur des composants tiers strictement limités :</p>
+            <p>Pour permettre l'interconnexion P2P directe et les notifications sans créer de compte central,
+              l'application s'appuie sur des composants tiers strictement limités :</p>
 
             <div class="table-wrap" tabindex="0" role="region" aria-labelledby="caption-thirdparty">
               <table class="data-table table-thirdparty">
-                <caption id="caption-thirdparty">Services tiers strictement limités utilisés pour l'infrastructure technique</caption>
+                <caption id="caption-thirdparty">Services tiers strictement limités utilisés pour l'infrastructure
+                  technique</caption>
                 <thead>
                   <tr>
                     <th scope="col">Service Tiers</th>
@@ -2286,19 +2507,22 @@
                     <th scope="row">Cloudflare Workers</th>
                     <td>Courtier de signalisation WebRTC éphémère (rendez-vous initial pour négocier SDP/ICE).</td>
                     <td>Adresses IP de transit, horodatages et identifiants de session temporaires.</td>
-                    <td><strong>100 % volatile en mémoire vive (RAM)</strong>. Aucun stockage de contenu. Journaux techniques réseau régis par la politique de Cloudflare Inc.</td>
+                    <td><strong>100 % volatile en mémoire vive (RAM)</strong>. Aucun stockage de contenu. Journaux
+                      techniques réseau régis par la politique de Cloudflare Inc.</td>
                   </tr>
                   <tr>
                     <th scope="row">Google Firebase (FCM)</th>
                     <td>Relais de réveil push asynchrone (fonctionnalité Phantom Wake).</td>
                     <td>Enveloppe binaire opaque chiffrée AES-256-GCM via clé symétrique locale (PSK).</td>
-                    <td><strong>Relais aveugle (Zero-Knowledge)</strong> : Google transporte des octets chiffrés sans détenir la clé de déchiffrement stockée dans le Keystore matériel du smartphone.</td>
+                    <td><strong>Relais aveugle (Zero-Knowledge)</strong> : Google transporte des octets chiffrés sans
+                      détenir la clé de déchiffrement stockée dans le Keystore matériel du smartphone.</td>
                   </tr>
                   <tr>
                     <th scope="row">Google Play Billing</th>
                     <td>Gestion des abonnements et achats de la version Pro.</td>
                     <td>Traitement financier de la transaction.</td>
-                    <td>L'éditeur n'a accès à <strong>aucune coordonnée bancaire</strong>, gérée exclusivement par Google LLC.</td>
+                    <td>L'éditeur n'a accès à <strong>aucune coordonnée bancaire</strong>, gérée exclusivement par
+                      Google LLC.</td>
                   </tr>
                 </tbody>
               </table>
@@ -2307,37 +2531,78 @@
             <h2>5. Fonctionnalités Réelles &amp; Périmètre Technique</h2>
             <p>L'application propose exclusivement les fonctions suivantes :</p>
             <ul>
-              <li><strong>Sas de Confidentialité &amp; Purification de Métadonnées (PrivacyShield) :</strong> Inspection et élimination intégrale des métadonnées identifiantes (coordonnées GPS, modèle d'appareil photo, horodatages, profil logiciel, auteur/créateur de document PDF) opérée 100 % localement en mémoire vive sur votre appareil, avec preuve interactive Avant / Après, renommage anonyme et cuisson automatique de l'orientation portrait des photos sans transit réseau ni cloud.</li>
-              <li><strong>Studio de Masquage Tactile &amp; Aplatissement PDF (Zero-Recovery) :</strong> Caviardage destructif au doigt (pinceau, flou gaussien, mosaïque de pixels, émojis protecteurs) avec écrasement physique irréversible des données de pixels en mémoire vive, et génération de documents PDF 100 % aplatis matriciels (0 calque amovible, 0 texte sélectionnable, 0 métadonnée résiduelle).</li>
-              <li><strong>Filigrane Anti-Usurpation Documentaire :</strong> Incrustation indélébile de trames répétées sur photos et documents PDF multi-pages à contraste calibré pour neutraliser les risques d'usurpation d'identité (CNI, avis d'imposition, fiches de paie, dossiers locatifs).</li>
-              <li><strong>Disque Virtuel SAF &amp; Purge Zéro-Résidu 24h :</strong> Exposition temporaire des documents purifiés via le Storage Access Framework Android (« Ouvrir à partir de ») avec purge automatique programmée après 24 heures et purge manuelle immédiate.</li>
-              <li><strong>Partage de fichiers (mono et multi-fichiers) :</strong> Transfert direct en local (LAN/SoftAP) ou par Internet P2P WebRTC sans hébergement intermédiaire, avec sélection unitaire par le destinataire, mode Diffusion et partage express Android.</li>
-              <li><strong>Partage de secrets &amp; mots de passe :</strong> Transmission volatile autodestructible après consultation.</li>
-              <li><strong>Demande de fichiers / secrets (Option Pro) :</strong> Génération d'un lien de dépôt sécurisé pour recevoir des éléments directement sur son appareil.</li>
-              <li><strong>Chat éphémère &amp; presse-papiers / vCard / point de rendez-vous :</strong> Échanges directs en mémoire vive (RAM-only), sans historique ni serveur de messages.</li>
-              <li><strong>Conférence vocale Push-To-Talk (PTT) :</strong> Flux audio direct chiffré de bout en bout (DTLS-SRTP) en mode talkie-walkie.</li>
-              <li><strong>Coffres PhantomLock &amp; sauvegardes portables <code>.plbak</code> :</strong> Stockage local chiffré au repos (AES-256-GCM, PBKDF2 120 000 itérations) sous protection exclusive du PIN / mot de passe de l'utilisateur, avec synergie bidirectionnelle de scellement et d'anonymisation dans le Sas et export portable chiffré.</li>
-              <li><strong>Contacts Favoris (Phantom Wake) :</strong> Réveil push sécurisé entre terminaux appairés via clé symétrique (PSK 256 bits).</li>
+              <li><strong>Sas de Confidentialité &amp; Purification de Métadonnées (PrivacyShield) :</strong> Inspection
+                et élimination chirurgicale des métadonnées identifiantes sur photos, PDF et vidéos (<code>MP4</code>,
+                <code>MOV</code>, <code>M4V</code>) : coordonnées GPS (traduites à l'audit en localité proche 100 %
+                hors-ligne via table embarquée, sans aucune requête réseau), modèle d'appareil photo/vidéo, horodatages
+                (<code>mvhd</code>/<code>tkhd</code>/<code>mdhd</code>, boîtes <code>udta</code>/<code>meta</code>
+                neutralisées <em>in-place</em> sans ré-encodage), profil logiciel, auteur/créateur de document PDF
+                (détection <code>/ObjStm</code>). Opéré 100 % localement sur votre appareil avec preuve interactive
+                Avant / Après, renommage anonyme et cuisson automatique de l'orientation portrait des photos sans
+                transit réseau ni cloud.
+              </li>
+              <li><strong>Studio de Masquage Tactile &amp; Aplatissement PDF (Zero-Recovery) :</strong> Caviardage
+                destructif au doigt sur photos et PDF (pinceau ou cadre noir opaque, mosaïque à palette synthétique
+                décorrélée, émojis sur fond opaque) avec écrasement physique irréversible des données de pixels en
+                mémoire vive, et génération de documents PDF 100 % aplatis matriciels (0 calque amovible, 0 texte
+                sélectionnable, 0 métadonnée résiduelle).</li>
+              <li><strong>Filigrane Anti-Usurpation Documentaire :</strong> Incrustation indélébile de trames répétées
+                sur photos et documents PDF multi-pages à contraste calibré pour neutraliser les risques d'usurpation
+                d'identité (CNI, avis d'imposition, fiches de paie, dossiers locatifs).</li>
+              <li><strong>Disque Virtuel SAF &amp; Purge Zéro-Résidu 24h :</strong> Exposition temporaire des documents
+                purifiés via le Storage Access Framework Android (« Ouvrir à partir de ») avec purge automatique
+                programmée après 24 heures et purge manuelle immédiate.</li>
+              <li><strong>Partage de fichiers (mono et multi-fichiers) :</strong> Transfert direct en local (LAN/SoftAP)
+                ou par Internet P2P WebRTC sans hébergement intermédiaire, avec sélection unitaire par le destinataire,
+                mode Diffusion et partage express Android.</li>
+              <li><strong>Partage de secrets &amp; mots de passe :</strong> Transmission volatile autodestructible après
+                consultation.</li>
+              <li><strong>Demande de fichiers / secrets (Option Pro) :</strong> Génération d'un lien de dépôt sécurisé
+                pour recevoir des éléments directement sur son appareil.</li>
+              <li><strong>Chat éphémère &amp; presse-papiers / vCard / point de rendez-vous :</strong> Échanges directs
+                en mémoire vive (RAM-only), sans historique ni serveur de messages.</li>
+              <li><strong>Conférence vocale Push-To-Talk (PTT) :</strong> Flux audio direct chiffré de bout en bout
+                (DTLS-SRTP) en mode talkie-walkie.</li>
+              <li><strong>Coffres PhantomLock &amp; sauvegardes portables <code>.plbak</code> :</strong> Stockage local
+                chiffré au repos (AES-256-GCM, PBKDF2 120 000 itérations) sous protection exclusive du PIN / mot de
+                passe de l'utilisateur, avec synergie bidirectionnelle de scellement et d'anonymisation dans le Sas et
+                export portable chiffré.</li>
+              <li><strong>Contacts Favoris (Phantom Wake) :</strong> Réveil push sécurisé entre terminaux appairés via
+                clé symétrique (PSK 256 bits).</li>
             </ul>
 
             <h2>6. Modèle de Menace &amp; Recommandations de Sécurité</h2>
             <ul>
-              <li><strong>Mode Local (LAN HTTP pour fichiers) :</strong> Le contenu est chiffré applicativement de bout en bout (clé dans l'ancre <code>#key</code>), protégeant contre l'<strong>écoute passive</strong> (sniffing Wi-Fi). Sur un réseau public hostile (café, gare) où un attaquant actif pourrait modifier le trafic HTTP (ARP spoofing), l'utilisateur est invité à activer le <strong>mode Point d'accès direct (SoftAP)</strong> ou le <strong>mode P2P Internet</strong>.</li>
-              <li><strong>Mode P2P Internet :</strong> Le tunnel est sécurisé par DTLS. Pour les échanges hautement sensibles, les correspondants sont invités à valider visuellement la concordance de leur code de sécurité (SAS) affiché à l'écran.</li>
-              <li><strong>Coffres PhantomLock &amp; sauvegardes <code>.plbak</code> :</strong> En cas d'oubli définitif du secret ou PIN de déchiffrement, <strong>aucune procédure de réinitialisation ou de récupération n'est possible</strong> par l'éditeur.</li>
+              <li><strong>Mode Local (LAN HTTP pour fichiers) :</strong> Le contenu est chiffré applicativement de bout
+                en bout (clé dans l'ancre <code>#key</code>), protégeant contre l'<strong>écoute passive</strong>
+                (sniffing Wi-Fi). Sur un réseau public hostile (café, gare) où un attaquant actif pourrait modifier le
+                trafic HTTP (ARP spoofing), l'utilisateur est invité à activer le <strong>mode Point d'accès direct
+                  (SoftAP)</strong> ou le <strong>mode P2P Internet</strong>.</li>
+              <li><strong>Mode P2P Internet :</strong> Le tunnel est sécurisé par DTLS. Pour les échanges hautement
+                sensibles, les correspondants sont invités à valider visuellement la concordance de leur code de
+                sécurité (SAS) affiché à l'écran.</li>
+              <li><strong>Coffres PhantomLock &amp; sauvegardes <code>.plbak</code> :</strong> En cas d'oubli définitif
+                du secret ou PIN de déchiffrement, <strong>aucune procédure de réinitialisation ou de récupération n'est
+                  possible</strong> par l'éditeur.</li>
             </ul>
 
             <h2>7. Permissions Requises par l'Appareil</h2>
             <p>L'application sollicite uniquement les permissions strictement nécessaires à son fonctionnement :</p>
             <ul>
-              <li><strong>Caméra :</strong> Scan du QR code pour rejoindre instantanément une session ou appairer un contact (aucun enregistrement ni diffusion vidéo).</li>
-              <li><strong>Microphone :</strong> Transmission audio lors de la conférence vocale Push-To-Talk uniquement.</li>
-              <li><strong>Accès réseau / Wi-Fi :</strong> Établissement du serveur local éphémère ou du point d'accès SoftAP.</li>
-              <li><strong>Stockage / Fichiers :</strong> Sélection des fichiers à traiter ou émettre, ou enregistrement des fichiers reçus sur le terminal.</li>
+              <li><strong>Caméra :</strong> Scan du QR code pour rejoindre instantanément une session ou appairer un
+                contact (aucun enregistrement ni diffusion vidéo).</li>
+              <li><strong>Microphone :</strong> Transmission audio lors de la conférence vocale Push-To-Talk uniquement.
+              </li>
+              <li><strong>Accès réseau / Wi-Fi :</strong> Établissement du serveur local éphémère ou du point d'accès
+                SoftAP.</li>
+              <li><strong>Stockage / Fichiers :</strong> Sélection des fichiers à traiter ou émettre, ou enregistrement
+                des fichiers reçus sur le terminal.</li>
             </ul>
 
             <h2>8. Vos Droits (RGPD) &amp; Contact</h2>
-            <p>Étant donné que l'éditeur ne détient aucune base de données d'utilisateurs, aucun compte et aucun fichier, il ne dispose d'aucun moyen technique de consulter, restituer ou supprimer vos contenus locaux ou vos échanges P2P.</p>
+            <p>Étant donné que l'éditeur ne détient aucune base de données d'utilisateurs, aucun compte et aucun
+              fichier, il ne dispose d'aucun moyen technique de consulter, restituer ou supprimer vos contenus locaux ou
+              vos échanges P2P.</p>
             <p>
               Pour toute question légale, technique ou relative au support :<br />
               <strong>DK Studio (Jean Virassa)</strong> — <a href="mailto:contact@dkstudio.dev">contact@dkstudio.dev</a>
@@ -2351,11 +2616,15 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <strong>PhantomLink (GhostMesh)</strong> · DK Studio — Application Android sans cloud, sans compte et sans traceur publicitaire.
+        <strong>PhantomLink</strong> · DK Studio — Application Android sans cloud, sans compte et sans
+        traceur publicitaire.
       </div>
       <div class="footer-links">
+        <a href="https://play.google.com/store/apps/details?id=com.ghostshare.app&amp;pcampaignid=web_share"
+          target="_blank" rel="noopener noreferrer">Google Play</a>
         <button type="button" class="footer-link-btn" data-open-tab="showcase">Présentation</button>
-        <button type="button" class="footer-link-btn" data-open-tab="privacy">Confidentialité &amp; Mentions légales</button>
+        <button type="button" class="footer-link-btn" data-open-tab="privacy">Confidentialité &amp; Mentions
+          légales</button>
         <a href="mailto:contact@dkstudio.dev">contact@dkstudio.dev</a>
       </div>
     </div>
@@ -2499,19 +2768,19 @@
           demoBadge.className = "demo-badge demo-badge-safe";
           demoGps.textContent = "Supprimée (0 donnée)";
           demoExif.textContent = "Effacés localement";
-          demoRedact.textContent = "Flouté irréversiblement";
+          demoRedact.textContent = "Masqué irréversiblement";
           demoOrient.textContent = "Droite & verrouillée";
           [demoGps, demoExif, demoRedact, demoOrient].forEach((n) => {
             n.className = "demo-row-val demo-val-clean";
           });
           demoWatermark.hidden = false;
           demoCaption.textContent =
-            "Tout est préparé directement dans votre téléphone Android. Vous pouvez ensuite envoyer le fichier par PhantomLink, ou même dans WhatsApp, Gmail ou Leboncoin sans fuite cachée.";
+            "Tout est préparé directement dans votre téléphone Android. Vous pouvez ensuite envoyer le fichier par PhantomLink, ou via une messagerie, un e-mail ou un site d'annonces sans fuite cachée.";
         } else {
           demoFilename.textContent = "IMG_20261110_CNI_Salon.jpg";
           demoBadge.textContent = "Traces exposées";
           demoBadge.className = "demo-badge demo-badge-risk";
-          demoGps.textContent = "48.8566° N, 2.3522° E (visible !)";
+          demoGps.textContent = "48.8566° N, 2.3522° E (≈ Paris, France)";
           demoExif.textContent = "Samsung S24 · 10/11/2026 09:42";
           demoRedact.textContent = "N° CNI & adresse lisibles";
           demoOrient.textContent = "Rotation par balise EXIF";
@@ -2556,4 +2825,5 @@
     })();
   </script>
 </body>
+
 </html>
