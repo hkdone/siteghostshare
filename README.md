@@ -1818,7 +1818,8 @@
                 </div>
 
                 <p class="demo-caption" id="demo-caption">
-                  Nettoyé localement sur Android, prêt pour PhantomLink, votre messagerie, votre e-mail ou un site d'annonces.
+                  Nettoyé localement sur Android, prêt pour PhantomLink, votre messagerie, votre e-mail ou un site
+                  d'annonces.
                 </p>
               </aside>
             </div>
@@ -1890,7 +1891,9 @@
                     <ul class="pillar-list">
                       <li><strong>Suppression des traces (Photos, PDF &amp; Vidéos) :</strong> GPS (traduit en ville
                         proche 100 % hors-ligne à l'audit), modèle de téléphone, date et auteur PDF retirés, vidéos
-                        <code>MP4</code>/<code>MOV</code>/<code>M4V</code> purgées sans ré-encodage ni perte de qualité,
+                        <code>MP4</code>/<code>MOV</code>/<code>M4V</code> purgées sans ré-encodage ni perte de qualité
+                        (certificats d'origine C2PA et mentions <code>AI_Generated</code> signalés et conservés pour la
+                        transparence pendant que chemins locaux et identifiants appareil sont écrasés),
                         photos toujours droites et preuve Avant / Après.
                       </li>
                       <li><strong>Masquage irréversible (Photos &amp; PDF) :</strong> caviardage noir opaque, mosaïque
@@ -2070,7 +2073,8 @@
                       <li><span class="step-num">1</span><span>Ouvrez la photo de l'objet dans PhantomLink.</span></li>
                       <li><span class="step-num">2</span><span>GPS et métadonnées disparaissent ; floutez une plaque ou
                           un reflet si besoin.</span></li>
-                      <li><span class="step-num">3</span><span>Piochez l'image propre depuis votre appli de petites annonces (purgée
+                      <li><span class="step-num">3</span><span>Piochez l'image propre depuis votre appli de petites
+                          annonces (purgée
                           auto en 24 h).</span></li>
                     </ol>
                   </div>
@@ -2402,6 +2406,12 @@
                 <p>Par conception, personne (pas même l'éditeur) ne peut le réinitialiser : gardez précieusement votre
                   mot de passe.</p>
               </details>
+              <details class="faq-item">
+                <summary>Que deviennent les balises de provenance IA (C2PA / AI_Generated) ?</summary>
+                <p>Vos données privées (GPS, appareil, chemins internes du téléphone) restent intégralement supprimées.
+                  Par transparence, certains marqueurs standards d'origine ou de génération par IA (certificats C2PA et
+                  mentions <code>AI_Generated</code>) sont signalés à l'audit et conservés dans la copie propre.</p>
+              </details>
             </div>
           </section>
         </div>
@@ -2536,10 +2546,13 @@
                 <code>MOV</code>, <code>M4V</code>) : coordonnées GPS (traduites à l'audit en localité proche 100 %
                 hors-ligne via table embarquée, sans aucune requête réseau), modèle d'appareil photo/vidéo, horodatages
                 (<code>mvhd</code>/<code>tkhd</code>/<code>mdhd</code>, boîtes <code>udta</code>/<code>meta</code>
-                neutralisées <em>in-place</em> sans ré-encodage), profil logiciel, auteur/créateur de document PDF
-                (détection <code>/ObjStm</code>). Opéré 100 % localement sur votre appareil avec preuve interactive
-                Avant / Après, renommage anonyme et cuisson automatique de l'orientation portrait des photos sans
-                transit réseau ni cloud.
+                neutralisées <em>in-place</em> sans ré-encodage, et boîtes propriétaires <code>sefd</code> purgées
+                chirurgicalement à <code>0x00</code>), profil logiciel, auteur/créateur de document PDF
+                (détection <code>/ObjStm</code>). Certains marqueurs standards de provenance (certificats
+                <strong>C2PA</strong> et jetons <code>AI_Generated</code>) sont signalés et préservés à des fins de
+                transparence d'origine sans jamais conserver de donnée personnelle ou de chemin local. Opéré 100 %
+                localement sur votre appareil avec preuve interactive Avant / Après, renommage anonyme et cuisson
+                automatique de l'orientation portrait des photos sans transit réseau ni cloud.
               </li>
               <li><strong>Studio de Masquage Tactile &amp; Aplatissement PDF (Zero-Recovery) :</strong> Caviardage
                 destructif au doigt sur photos et PDF (pinceau ou cadre noir opaque, mosaïque à palette synthétique
